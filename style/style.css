@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Duru Sans", Times, serif;
+}
+
+:root {
+  --bg-color: #0A1612;
+  --second-bg-color: #79acc0;
+  --text-color: #B6B9BE;
+  --main-color: #deffff;
+  --secondary-bg-color: #bce3ea;
+}
+
+html {
+  font-size: 60%;
+  overflow: auto;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Header */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 12% 2rem;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+
+.name {
+  font-size: 3rem;
+  color: var(--text-color);
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.name:hover {
+  transform: scale(1.1);
+}
+
+.name span {
+  text-shadow: 0 0 25px var(--main-color);
+}
+
+.navbar a {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-left: 2rem;
+  font-weight: 500;
+  transition: 0.3 ease;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
+
+/* Primeira section */
+
+.first-sec {
+  min-height: 119vh;
+  background-image: url(/Paradoxo-do-Saber/src/paradoxo-1.jpg);
+  background-position: center;
+  background-size: 100%;
+}
+
+/* h2 title */
+
+.titleh2 {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.titleh2 h2 {
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+/* Carrosel */
+
+.boxx {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background: #222;
+  transform-style: preserve-3d;
+  background-position: center;
+  background-size: 25%;
+  width: 100%;
+  height: 100vh;
+  transition: background-image 0.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+}
+
+.item {
+  flex: 0 0 100%;
+  transition: transform 0.5s ease;
+}
+
+.item img {
+  width: 100%;
+  display: block;
+}
+
+.box .item {
+  position: absolute;
+  top: calc(50% - 150px);
+  left: calc(50% - 100px);
+  width: 200px;
+  height: 300px;
+  background: #fff;
+  transition: 0.5s;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
+  transform-style: preserve-3d;
+  transform-origin: bottom;
+  user-select: none;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, #0002);
+}
+
+.box .item:nth-child(1) {
+  transform: translate3d(-250px, 0, 0) scale(0.8) rotateY(25deg);
+  z-index: 1;
+}
+
+.box .item:nth-child(2) {
+  transform: translate3d(-250px, 0, 0) scale(0.8) rotateY(25deg);
+  z-index: 2;
+}
+
+.box .item:nth-child(3) {
+  transform: translate3d(-150px, 0, 0) scale(0.9) rotateY(15deg);
+  z-index: 3;
+}
+
+.box .item:nth-child(4) {
+  transform: translate3d(0, 0, 0) scale(1) rotateY(0deg);
+  z-index: 4;
+}
+
+.box .item:nth-child(5) {
+  transform: translate3d(150px, 0, 0) scale(0.9) rotateY(-15deg);
+  z-index: 3;
+}
+
+.box .item:nth-child(6) {
+  transform: translate3d(250px, 0, 0) scale(0.8) rotateY(-25deg);
+  z-index: 2;
+}
+
+.box .item:nth-child(7) {
+  transform: translate3d(250px, 0, 0) scale(0.8) rotateY(-25deg);
+  z-index: -1;
+}
+
+.box .item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Botões */
+
+.buttons {
+  position: absolute;
+  bottom: 75px;
+  display: flex;
+  gap: 20px;
+}
+
+.buttons span {
+  width: 60px;
+  height: 60px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: 0.2s ease-in-out;
+}
+
+.buttons span:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.buttons span::before {
+  content: "←";
+}
+
+.buttons span:last-child::before {
+  content: "→";
+}
+
+/* .buttons {
+  position: absolute;
+  bottom: 75px;
+  display: flex;
+  gap: 20px;
+}
+
+.buttons span {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 2px solid red;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+}
+
+.buttons span:hover {
+  opacity: 1;
+}
+
+.buttons span::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+  rotate: -45deg;
+}
+
+.buttons span:last-child::before {
+  content: "";
+  position: absolute;
+  left: initial;
+  right: 20px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+  rotate: 135deg;
+} */
+
