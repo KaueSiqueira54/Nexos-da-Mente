@@ -14,10 +14,10 @@
 }
 
 :root {
-  --bg-color: #0A1612;
+  --bg-color: #0a1612;
   --second-bg-color: #79acc0;
-  --text-color: #B6B9BE;
-  --main-color: #deffff;
+  --text-color: #fff;
+  --main-color: rgb(166, 0, 255);
   --secondary-bg-color: #bce3ea;
 }
 
@@ -40,11 +40,12 @@ body {
   width: 100%;
   padding: 2rem 12% 2rem;
   background: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(20px);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 5;
+  line-height: 30px;
 }
 
 .name {
@@ -60,7 +61,15 @@ body {
 }
 
 .name span {
-  text-shadow: 0 0 25px var(--main-color);
+  text-shadow: 0 0 25px rgb(166, 0, 255);
+}
+
+.name span {
+  color: rgb(166, 0, 255);
+}
+
+span {
+  color: rgb(166, 0, 255);
 }
 
 .navbar a {
@@ -82,7 +91,7 @@ body {
 /* Primeira section */
 
 .first-sec {
-  min-height: 119vh;
+  min-height: 115vh;
   background-image: url(/Paradoxo-do-Saber/src/paradoxo-1.jpg);
   background-position: center;
   background-size: 100%;
@@ -95,7 +104,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .titleh2 h2 {
@@ -143,10 +151,10 @@ body {
 
 .box .item {
   position: absolute;
-  top: calc(50% - 150px);
-  left: calc(50% - 100px);
-  width: 200px;
-  height: 300px;
+  top: calc(50% - 225px);
+  left: calc(50% - 150px);
+  width: 300px;
+  height: 450px;
   background: #fff;
   transition: 0.5s;
   box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
@@ -239,50 +247,215 @@ body {
   content: "→";
 }
 
-/* .buttons {
-  position: absolute;
-  bottom: 75px;
-  display: flex;
-  gap: 20px;
-}
+/* Section Animated */
 
-.buttons span {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  border: 2px solid red;
-  border-radius: 50%;
-  cursor: pointer;
+.animated {
+  background-color: var(--bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.5;
+  min-height: 150vh;
 }
 
-.buttons span:hover {
-  opacity: 1;
+#one {
+  height: 400px;
+  width: 350px;
 }
 
-.buttons span::before {
-  content: "";
+.container {
+  width: 400px;
+  height: 350px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: spinFocus 20s linear infinite;
+  perspective: 1200px;
+}
+
+.container span {
   position: absolute;
-  left: 20px;
-  width: 10px;
-  height: 10px;
-  border-top: 2px solid red;
-  border-left: 2px solid red;
-  rotate: -45deg;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(600px);
+  animation: highlightFocus 8s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 1s);
 }
 
-.buttons span:last-child::before {
-  content: "";
-  position: absolute;
-  left: initial;
-  right: 20px;
-  width: 10px;
-  height: 10px;
-  border-top: 2px solid red;
-  border-left: 2px solid red;
-  rotate: 135deg;
-} */
+.container span:hover {
+  transform: scale(1.3) rotateY(calc(var(--i) * 45deg)) translateZ(600px);
+  filter: brightness(1.5) contrast(1.2);
+  z-index: 100 !important;
+}
 
+.container span img {
+  border-radius: 10px;
+  border: 6px ridge #ccc;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.container:hover {
+  animation-play-state: paused;
+}
+
+@keyframes spinFocus {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes highlightFocus {
+  0%, 100% {
+    transform: scale(1) rotateY(calc(var(--i) * 45deg)) translateZ(600px);
+    filter: brightness(0.6);
+    z-index: 1;
+  }
+  50% {
+    transform: scale(1.2) rotateY(calc(var(--i) * 45deg)) translateZ(600px);
+    filter: brightness(1.2);
+    z-index: 10;
+  }
+}
+
+/* Esconde todo o conteúdo para telas menores que 1024px */
+@media (max-width: 1023px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  body > *:not(script):not(style) {
+    display: none !important;
+  }
+
+  body::before {
+    content: "Este site está disponível apenas em telas de computador.";
+  }
+}
+
+@media (min-width: 1024px) {
+
+  html {
+    font-size: 50%;
+  }
+  
+  .first-sec {
+    min-height: 90vh;
+  }
+
+  .header {
+    width: 100%;
+    padding: 2rem 12% 2rem;
+  }
+
+  .boxx {
+    min-height: 115vh;
+  }
+
+  /* Animated */
+
+  .animated {
+    min-height: 90vh;
+    padding: 3rem 0;
+    overflow: hidden; /* evita que o conteúdo ultrapasse a seção */
+  }
+
+  .container {
+    width: 500px;
+    height: 380px;
+    animation: spinFocus 30s linear infinite;
+    perspective: 1200px;
+  }
+
+  .container span {
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(500px);
+  }
+
+  .container span:hover {
+    transform: scale(1.15) rotateY(calc(var(--i) * 45deg)) translateZ(500px);
+    filter: brightness(1.3) contrast(1.1);
+  }
+
+  #one {
+    width: 320px;
+    height: 400px;
+  }
+
+  .container span img {
+    border: 4px ridge rgb(166, 0, 255);
+  }
+
+  @keyframes highlightFocus {
+    0%, 100% {
+      transform: scale(1) rotateY(calc(var(--i) * 45deg)) translateZ(500px);
+    }
+    50% {
+      transform: scale(1.1) rotateY(calc(var(--i) * 45deg)) translateZ(500px);
+    }
+  }
+}
+
+@media (min-width: 1120px) {
+
+  .first-sec {
+    min-height: 98vh;
+  }
+
+  .boxx {
+    min-height: 120vh;
+  }
+
+  .animated {
+    min-height: 110vh;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  html {
+    font-size: 60%;
+  }
+
+  .first-sec {
+    min-height: 100vh;
+  }
+
+  .animated {
+    min-height: 120vh;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  html {
+    font-size: 65%;
+  }
+  .first-sec {
+    min-height: 120vh;
+  }
+  .animated {
+    min-height: 130vh;
+  }
+
+}
+
+@media (min-width: 1600px) {
+
+  html {
+    font-size: 68%;
+  }
+  .first-sec {
+    min-height: 130vh;
+  }
+
+  .animated {
+    min-height: 130vh;
+  }
+}
