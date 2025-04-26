@@ -723,7 +723,8 @@ i #eight {
     font-size: 65%;
   }
   .first-sec {
-    min-height: 120vh;
+    min-height: 130vh;
+    background-size: contain;
   }
   .animated {
     min-height: 130vh;
