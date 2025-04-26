@@ -1,3 +1,9 @@
+//Mensagem
+
+document.addEventListener("DOMContentLoaded", function() {
+  alert("Bem-vindo ao Paradoxo do Saber!\nSite em fase de Desenvolvimento.");
+});
+
 //Botôes
 
 let prev = document.querySelector(".prev");

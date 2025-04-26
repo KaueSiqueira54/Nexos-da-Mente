@@ -326,12 +326,12 @@ span {
   background: var(--bg-color);
 }
 
-.news {
+/* .news {
   background-image: url(/Paradoxo-do-Saber/src/teste.png);
   background-position: center, top right;
   background-repeat: no-repeat, repeat;
   background-size: cover, contain;
-}
+} */
 
 .timeline-items {
   max-width: 1200px;
@@ -380,6 +380,111 @@ span {
   top: 10px;
 }
 
+.timeline-date {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-color);
+  margin: 6px 0 15px;
+}
+
+.timeline-content img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  border-radius: 10px;
+}
+
+/* Primeira obra */
+
+#first {
+  color: #D61A14;
+}
+
+i #first{
+  color: #D61A14;
+  text-decoration: underline;
+}
+
+/* Segunda obra */
+
+#second {
+  color: #D72630;
+}
+
+i #second {
+  color: #D72630;
+  text-decoration: underline;
+}
+
+/* terceira obra*/
+
+#third {
+  color: #564BA9;
+}
+
+i #third {
+  color: #564BA9;
+  text-decoration: underline;
+}
+
+/* Quarta obra */
+
+#fourtyd {
+  color: #FFFDEE;
+}
+
+i #fourtyd {
+  color: #FFFDEE;
+  text-decoration: underline;
+}
+
+/* Quinta obra */
+
+#fiftyd {
+  color: #F5BB0D;
+}
+
+i #fiftyd {
+  color: #F5BB0D;
+  text-decoration: underline;
+}
+
+/* Sexta Obra */
+
+#sixtyd {
+  color: #A9CC54;
+}
+
+i #sixtyd {
+  color: #A9CC54;
+  text-decoration: underline;
+}
+
+/* Sétima Obra */
+
+#seven {
+  color: #DD222A;
+}
+
+i #seven {
+  color: #DD222A;
+  text-decoration: underline;
+}
+
+/* Oitava Obra */
+
+#eight {
+  color: #A4A3A1;
+}
+
+i #eight {
+  color: #A4A3A1;
+  text-decoration: underline;
+}
+
 /* Conteúdo */
 .timeline-content {
   background-color: var(--bg-color);
@@ -410,6 +515,82 @@ span {
   line-height: 22px;
 }
 
+/* Footer */
+
+/* Footer */
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0;
+  background-color: var(--bg-color);
+}
+
+.footer p {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: var(--main-color);
+}
+
+.footer .social a {
+  font-size: 25px;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.footer .social a:hover {
+  transform: scale(1.2) translateY(-10px);
+  background-color: var(--main-color);
+  color: black;
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer ul li a {
+  color: var(--text-color);
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.footer ul li a:hover {
+  border-bottom: 3px solid var(--main-color);
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer .copyright {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--text-color);
+}
 
 /*  */
 
