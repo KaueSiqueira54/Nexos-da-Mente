@@ -93,8 +93,9 @@ span {
 .first-sec {
   min-height: 115vh;
   background-image: url(/Paradoxo-do-Saber/src/paradoxo-1.jpg);
-  background-position: center;
-  background-size: 100%;
+  background-position: center, top right;
+  background-repeat: no-repeat, repeat;
+  background-size: cover, contain;
 }
 
 /* h2 title */
@@ -318,7 +319,102 @@ span {
   }
 }
 
+/* Section News */
+
+.news {
+  padding: 100px 15px;
+  background: var(--bg-color);
+}
+
+.news {
+  background-image: url(/Paradoxo-do-Saber/src/teste.png);
+  background-position: center, top right;
+  background-repeat: no-repeat, repeat;
+  background-size: cover, contain;
+}
+
+.timeline-items {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.timeline-items::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: var(--main-color);
+  left: calc(50% - 1px);
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd) {
+  padding-right: calc(50% + 30px);
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  padding-left: calc(50% + 30px);
+}
+
+.timeline-dot {
+  height: 21px;
+  width: 21px;
+  background-color: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
+  position: absolute;
+  left: calc(50% - 8px);
+  border-radius: 50%;
+  top: 10px;
+}
+
+/* Conteúdo */
+.timeline-content {
+  background-color: var(--bg-color);
+  border: 3px solid var(--main-color);
+  padding: 30px 50px;
+  border-radius: 4rem;
+  box-shadow: 0 0 10px var(--main-color);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.timeline-content:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.timeline-content h3 {
+  font-size: 20px;
+  color: var(--main-color);
+  margin: 0 0 10px;
+  font-weight: 500;
+}
+
+.timeline-content p {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+
+/*  */
+
 /* Esconde todo o conteúdo para telas menores que 1024px */
+
 @media (max-width: 1023px) {
   body {
     display: flex;
@@ -339,6 +435,8 @@ span {
     content: "Este site está disponível apenas em telas de computador.";
   }
 }
+
+/* 1023px */
 
 @media (min-width: 1023px) {
 
@@ -402,6 +500,8 @@ span {
   }
 }
 
+/* 1120px */
+
 @media (min-width: 1120px) {
 
   .first-sec {
@@ -416,6 +516,8 @@ span {
     min-height: 110vh;
   }
 }
+
+/* 1200px */
 
 @media (min-width: 1200px) {
 
@@ -432,6 +534,8 @@ span {
   }
 }
 
+/* 1400px */
+
 @media (min-width: 1400px) {
 
   html {
@@ -446,6 +550,8 @@ span {
 
 }
 
+/* 1600px */
+
 @media (min-width: 1600px) {
 
   html {
@@ -458,4 +564,56 @@ span {
   .animated {
     min-height: 130vh;
   }
+}
+
+/* 1700px */
+
+@media (min-width: 1700px) {
+
+  .first-sec {
+    min-height: 140vh;
+  }
+
+  .animated {
+    min-height: 130vh;
+  }
+
+  .boxx {
+    min-height: 140vh;
+  }
+
+  .box .item {
+    top: calc(50% - 300px);
+    left: calc(50% - 200px);
+    width: 400px;
+    height: 600px;
+  }
+
+  .buttons {
+    bottom: 10px;
+  }
+}
+
+/* 1800px */
+
+@media (min-width: 1800px) {
+  
+  html {
+    font-size: 72%;
+  }
+
+}
+
+/* 2000 */
+
+@media (min-width: 2000px) {
+
+  html {
+    font-size: 75%;
+  }
+  
+  .first-sec {
+    min-height: 160vh;
+  }
+
 }
