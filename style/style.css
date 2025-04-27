@@ -323,7 +323,44 @@ span {
 
 .news {
   padding: 100px 15px;
+  padding-top: 2rem;
   background: var(--bg-color);
+}
+
+.about {
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  box-shadow: 0 0 25px var(--main-color), 0 0 20px var(--main-color);
+  transition: box-shadow 0.3s, transform 0.3s;
+  padding-bottom: 2rem;
+}
+
+.about:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.about-project p{
+  text-align: center;
+  color: var(--text-color);
+  padding-top: 1rem;
+  text-align: left;
+  padding: 1rem;
+  padding-inline: 3rem;
+}
+
+.about-project h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  padding: 2rem;
+  text-decoration: underline 3px var(--main-color);
 }
 
 /* .news {
@@ -339,6 +376,7 @@ span {
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  padding-top: 5rem;
 }
 
 .timeline-items::before {
@@ -512,7 +550,7 @@ i #eight {
   font-weight: 500;
 }
 
-.timeline-content p {
+.timeline-content, #tex p {
   color: var(--text-color);
   font-size: 16px;
   font-weight: 300;
@@ -640,6 +678,21 @@ i #eight {
     }
   }
 
+  /* Scrollbar */
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: var(--bg-color);
+    width: 50px;
+  }
+
 /* Esconde todo o conteúdo para telas menores que 1024px */
 
 @media (max-width: 1023px) {
@@ -665,7 +718,7 @@ i #eight {
 
 /* 1023px */
 
-@media (min-width: 1023px) {
+@media (min-width: 1023px) and (max-width:1120px) {
 
   html {
     font-size: 50%;
@@ -686,7 +739,7 @@ i #eight {
 }
 /* 1120px */
 
-@media (min-width: 1120px) {
+@media (min-width: 1120px) and (max-width:1200px){
 
   .first-sec {
     min-height: 98vh;
@@ -699,11 +752,15 @@ i #eight {
   .animated {
     min-height: 110vh;
   }
+
+  .about-project h3 {
+    font-size: 2rem;
+  }
 }
 
 /* 1200px */
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width:1400px) {
 
   html {
     font-size: 60%;
@@ -720,13 +777,13 @@ i #eight {
 
 /* 1400px */
 
-@media (min-width: 1400px) {
+@media (min-width: 1400px) and (max-width:1600px) {
 
   html {
     font-size: 65%;
   }
   .first-sec {
-    min-height: 110vh;
+    /* min-height: 110vh; */
     background-size: 100%;
     /* background-size: contain; */
   }
@@ -738,7 +795,7 @@ i #eight {
 
 /* 1600px */
 
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width:1700px) {
 
   html {
     font-size: 70%;
@@ -752,8 +809,22 @@ i #eight {
     font-size: 2.5rem;
   }
 
+  .timeline-content h3 {
+    line-height: 3rem;
+  }
+
+  .about-project h3 {
+    font-size: 2rem;
+  }
+
   .news p {
     font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+
+  #tex p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
   }
 
   .footer a,h2{
@@ -767,7 +838,7 @@ i #eight {
 
 /* 1700px */
 
-@media (min-width: 1700px) {
+@media (min-width: 1700px) and (max-width:1800px) {
 
   html {
     font-size: 72%;
@@ -779,6 +850,10 @@ i #eight {
 
   .boxx {
     min-height: 110vh;
+  }
+
+  .box {
+    max-width: 800px;
   }
 
   .box .item {
@@ -797,6 +872,10 @@ i #eight {
     bottom: 80px;
   }
 
+  .about {
+    max-width: 1400px;
+  }
+
   .timeline-items {
     max-width: 1400px;
   }
@@ -811,7 +890,7 @@ i #eight {
 
 /* 1800px */
 
-@media (min-width: 1800px) {
+@media (min-width: 1800px) and (max-width:2000px) {
   
   html {
     font-size: 72%;
@@ -837,6 +916,10 @@ i #eight {
 
   .animated {
     min-height: 120vh;
+  }
+
+  .about {
+    max-width: 1500px;
   }
 
   .timeline-items {
