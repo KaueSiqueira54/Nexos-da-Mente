@@ -91,7 +91,7 @@ span {
 /* Primeira section */
 
 .first-sec {
-  min-height: 115vh;
+  min-height: 100vh;
   background-image: url(/Paradoxo-do-Saber/src/paradoxo-1.jpg);
   background-position: center, top right;
   background-repeat: no-repeat, repeat;
@@ -387,6 +387,10 @@ span {
   margin: 6px 0 15px;
 }
 
+.timeline-content {
+  text-align: left;
+}
+
 .timeline-content img {
   width: 50%;
   display: flex;
@@ -513,9 +517,8 @@ i #eight {
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
+  padding-top: 1rem;
 }
-
-/* Footer */
 
 /* Footer */
 
@@ -525,6 +528,7 @@ i #eight {
   width: 100%;
   padding: 40px 0;
   background-color: var(--bg-color);
+  text-transform: uppercase;
 }
 
 .footer p {
@@ -594,6 +598,48 @@ i #eight {
 
 /*  */
 
+  /* Animated */
+
+  .animated {
+    min-height: 90vh;
+    padding: 3rem 0;
+    overflow: hidden; /* evita que o conteúdo ultrapasse a seção */
+  }
+
+  .container {
+    width: 500px;
+    height: 380px;
+    animation: spinFocus 30s linear infinite;
+    perspective: 1200px;
+  }
+
+  .container span {
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(500px);
+  }
+
+  .container span:hover {
+    transform: scale(1.15) rotateY(calc(var(--i) * 45deg)) translateZ(500px);
+    filter: brightness(1.3) contrast(1.1);
+  }
+
+  #one {
+    width: 320px;
+    height: 400px;
+  }
+
+  .container span img {
+    border: 4px ridge rgb(166, 0, 255);
+  }
+
+  @keyframes highlightFocus {
+    0%, 100% {
+      transform: scale(1) rotateY(calc(var(--i) * 45deg)) translateZ(500px);
+    }
+    50% {
+      transform: scale(1.1) rotateY(calc(var(--i) * 45deg)) translateZ(500px);
+    }
+  }
+
 /* Esconde todo o conteúdo para telas menores que 1024px */
 
 @media (max-width: 1023px) {
@@ -637,50 +683,7 @@ i #eight {
   .boxx {
     min-height: 115vh;
   }
-
-  /* Animated */
-
-  .animated {
-    min-height: 90vh;
-    padding: 3rem 0;
-    overflow: hidden; /* evita que o conteúdo ultrapasse a seção */
-  }
-
-  .container {
-    width: 500px;
-    height: 380px;
-    animation: spinFocus 30s linear infinite;
-    perspective: 1200px;
-  }
-
-  .container span {
-    transform: rotateY(calc(var(--i) * 45deg)) translateZ(500px);
-  }
-
-  .container span:hover {
-    transform: scale(1.15) rotateY(calc(var(--i) * 45deg)) translateZ(500px);
-    filter: brightness(1.3) contrast(1.1);
-  }
-
-  #one {
-    width: 320px;
-    height: 400px;
-  }
-
-  .container span img {
-    border: 4px ridge rgb(166, 0, 255);
-  }
-
-  @keyframes highlightFocus {
-    0%, 100% {
-      transform: scale(1) rotateY(calc(var(--i) * 45deg)) translateZ(500px);
-    }
-    50% {
-      transform: scale(1.1) rotateY(calc(var(--i) * 45deg)) translateZ(500px);
-    }
-  }
 }
-
 /* 1120px */
 
 @media (min-width: 1120px) {
@@ -723,8 +726,9 @@ i #eight {
     font-size: 65%;
   }
   .first-sec {
-    min-height: 130vh;
-    background-size: contain;
+    min-height: 110vh;
+    background-size: 100%;
+    /* background-size: contain; */
   }
   .animated {
     min-height: 130vh;
@@ -737,14 +741,27 @@ i #eight {
 @media (min-width: 1600px) {
 
   html {
-    font-size: 68%;
-  }
-  .first-sec {
-    min-height: 130vh;
+    font-size: 70%;
   }
 
   .animated {
     min-height: 130vh;
+  }
+
+  .news h3, #first, .timeline-date{
+    font-size: 2.5rem;
+  }
+
+  .news p {
+    font-size: 1.8rem;
+  }
+
+  .footer a,h2{
+    font-size: 1.8rem;
+  }
+
+  .copyright {
+    font-size: 4rem;
   }
 }
 
@@ -752,8 +769,8 @@ i #eight {
 
 @media (min-width: 1700px) {
 
-  .first-sec {
-    min-height: 140vh;
+  html {
+    font-size: 72%;
   }
 
   .animated {
@@ -761,7 +778,7 @@ i #eight {
   }
 
   .boxx {
-    min-height: 140vh;
+    min-height: 110vh;
   }
 
   .box .item {
@@ -771,8 +788,24 @@ i #eight {
     height: 600px;
   }
 
+  .buttons span {
+    width: 80px;
+    height: 80px;
+  }
+
   .buttons {
-    bottom: 10px;
+    bottom: 80px;
+  }
+
+  .timeline-items {
+    max-width: 1400px;
+  }
+
+  .footer .social a {
+    width: 62px;
+    height: 62px;
+    line-height: 62px;
+    font-size: 35px;
   }
 }
 
@@ -791,11 +824,27 @@ i #eight {
 @media (min-width: 2000px) {
 
   html {
-    font-size: 75%;
+    font-size: 80%;
+  }
+
+  .header {
+    height: 8rem;
   }
   
   .first-sec {
-    min-height: 160vh;
+    min-height: 100vh;
+  }
+
+  .animated {
+    min-height: 120vh;
+  }
+
+  .timeline-items {
+    max-width: 1500px;
+  }
+
+  .news p {
+    font-size: 2rem;
   }
 
 }
