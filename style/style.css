@@ -326,7 +326,7 @@ span {
   padding-top: 2rem;
   background: var(--bg-color);
 }
-
+/* 
 .about {
   border: 1px solid var(--main-color);
   border-radius: 10px;
@@ -361,7 +361,7 @@ span {
   font-size: 1.8rem;
   padding: 2rem;
   text-decoration: underline 3px var(--main-color);
-}
+} */
 
 /* .news {
   background-image: url(/Paradoxo-do-Saber/src/teste.png);
