@@ -46,6 +46,7 @@ body {
   align-items: center;
   z-index: 5;
   line-height: 30px;
+  border-bottom: 1px solid var(--main-color);
 }
 
 .name {
@@ -318,6 +319,43 @@ span {
     z-index: 10;
   }
 }
+
+/* Frase */
+
+.soc {
+  max-width: 800px;
+  height: 400px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #D4AF37;
+  border: 1px solid var(--main-color);
+  background-color: #1A1A1A;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.soc:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--main-color);
+  cursor: pointer;
+}
+
+.fra h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 1px;
+  padding: 1rem;
+}
+
+.fra p {
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
 
 /* Section News */
 
@@ -723,6 +761,11 @@ i #eight {
   html {
     font-size: 50%;
   }
+
+  .soc {
+    width: 700px;
+    height: 300px;
+  }
   
   .first-sec {
     min-height: 90vh;
@@ -743,6 +786,11 @@ i #eight {
 
   .first-sec {
     min-height: 98vh;
+  }
+
+  .soc {
+    width: 700px;
+    height: 300px;
   }
 
   .boxx {
@@ -766,6 +814,11 @@ i #eight {
     font-size: 60%;
   }
 
+  .soc {
+    width: 800px;
+    height: 300px;
+  }
+
   .first-sec {
     min-height: 100vh;
   }
@@ -787,6 +840,12 @@ i #eight {
     background-size: 100%;
     /* background-size: contain; */
   }
+
+  .soc {
+    width: 800px;
+    height: 300px;
+  }
+
   .animated {
     min-height: 130vh;
   }
@@ -842,6 +901,11 @@ i #eight {
 
   html {
     font-size: 72%;
+  }
+
+  .soc {
+    max-width: 1000px;
+    height: 400px;
   }
 
   .animated {
