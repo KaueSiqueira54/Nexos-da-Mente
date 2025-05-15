@@ -1,0 +1,18 @@
+@import url(/Paradoxo-do-Saber/style/style.css);
+
+iframe {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-style: italic;
+  padding-top: 3rem;
+  font-size: 2.5rem;
+}

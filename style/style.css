@@ -92,11 +92,17 @@ span {
 /* Primeira section */
 
 .first-sec {
-  min-height: 100vh;
-  background-image: url(/Paradoxo-do-Saber/src/paradoxo-1.jpg);
-  background-position: center, top right;
-  background-repeat: no-repeat, repeat;
-  background-size: cover, contain;
+  min-height: 80vh;
+}
+
+.first-sec video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 /* h2 title */
@@ -138,7 +144,7 @@ span {
   perspective: 500px;
   overflow: hidden;
   width: 100%;
-  max-width: 600px;
+  max-width: 1000px;
 }
 
 .item {
@@ -340,7 +346,6 @@ span {
 .soc:hover {
   transform: scale(1.05);
   box-shadow: 0 0 25px var(--main-color);
-  cursor: pointer;
 }
 
 .fra h2 {
@@ -364,49 +369,6 @@ span {
   padding-top: 2rem;
   background: var(--bg-color);
 }
-/* 
-.about {
-  border: 1px solid var(--main-color);
-  border-radius: 10px;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  margin: 0 auto;
-  max-width: 1200px;
-  display: flex;
-  box-shadow: 0 0 25px var(--main-color), 0 0 20px var(--main-color);
-  transition: box-shadow 0.3s, transform 0.3s;
-  padding-bottom: 2rem;
-}
-
-.about:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px var(--main-color);
-}
-
-.about-project p{
-  text-align: center;
-  color: var(--text-color);
-  padding-top: 1rem;
-  text-align: left;
-  padding: 1rem;
-  padding-inline: 3rem;
-}
-
-.about-project h3 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 1.8rem;
-  padding: 2rem;
-  text-decoration: underline 3px var(--main-color);
-} */
-
-/* .news {
-  background-image: url(/Paradoxo-do-Saber/src/teste.png);
-  background-position: center, top right;
-  background-repeat: no-repeat, repeat;
-  background-size: cover, contain;
-} */
 
 .timeline-items {
   max-width: 1200px;
@@ -766,10 +728,6 @@ i #eight {
     width: 700px;
     height: 300px;
   }
-  
-  .first-sec {
-    min-height: 90vh;
-  }
 
   .header {
     width: 100%;
@@ -917,7 +875,7 @@ i #eight {
   }
 
   .box {
-    max-width: 800px;
+    max-width: 1100px;
   }
 
   .box .item {

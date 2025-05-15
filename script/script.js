@@ -1,6 +1,6 @@
 //Mensagem
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   alert("Bem-vindo ao Paradoxo do Saber!\nSite em fase de Desenvolvimento.");
 });
 
@@ -40,3 +40,11 @@ prev.addEventListener("click", function () {
 
 // Fundo inicial
 updateBackground();
+
+//Linkando as páginas
+
+document.querySelectorAll(".timeline-content").forEach((element) => {
+  element.addEventListener("click", () => {
+    window.open("index2.html", "_blank");
+  });
+});
