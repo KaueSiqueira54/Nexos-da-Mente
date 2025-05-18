@@ -21,6 +21,14 @@
   --secondary-bg-color: #bce3ea;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
 html {
   font-size: 60%;
   overflow: auto;
@@ -322,7 +330,7 @@ span {
 /* Frase */
 
 .soc {
-  max-width: 800px;
+  max-width: 1200px;
   height: 400px;
   display: flex;
   margin: 0 auto;
@@ -549,6 +557,161 @@ i #eight {
   font-weight: 300;
   line-height: 22px;
   padding-top: 1rem;
+}
+
+/* Fic-Paradoxo-slider */
+
+.fic {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  background-color: #5b62b0;
+  position: relative;
+}
+
+.slider-track {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  width: fit-content;
+  animation: marquee 20s linear infinite;
+}
+
+.slider img {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+}
+
+/* Animação contínua sem falha */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Section - Ficcão */
+
+.ficcao {
+  width: 100%;
+  min-height: 80vh;
+  background-image: url(/Paradoxo-do-Saber/src/ficcao.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.img-fic {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img-fic img {
+  width: 45%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  transform: translateY(-0%); /* faz a imagem invadir a área de cima */
+}
+
+/* Section - Sci */
+
+.sci {
+  min-height: 60vh;
+}
+
+.content-sci-title {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.h2-sci {
+  width: 30%;
+  height: 150px;
+  z-index: 2;
+  transform: translateY(-58%);
+}
+
+.h2-sci h2 {
+  text-align: start;
+  font-size: 8rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.h2-sci p {
+  font-size: 3rem;
+}
+
+/* Content-sci / Sobre o que é Sci-Fi */
+
+.sci-content {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: right;
+  border: 1px solid var(--main-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  z-index: 2;
+  transform: translateY(-20%); /* faz a imagem invadir a área de cima */
+}
+
+.sci-content:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.sci-content p {
+  font-size: 2.2rem;
+  padding: 2rem;
+  padding-inline: 5rem;
+  text-align: center;
+}
+
+/* About */
+
+.about {
+  min-height: 80vh;
+}
+
+.about-content {
+  max-width: 800px;
+  height: 500px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--main-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.about-content:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.about-content p {
+  text-align: center;
+  font-size: 2rem;
+  padding-inline: 3rem;
+  letter-spacing: 1px;
+  font-style: italic;
 }
 
 /* Footer */
