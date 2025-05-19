@@ -601,7 +601,7 @@ i #eight {
 
 .ficcao {
   width: 100%;
-  min-height: 80vh;
+  min-height: 100vh;
   background-image: url(/Paradoxo-do-Saber/src/ficcao2.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1007,6 +1007,10 @@ i #eight {
     height: 80vh;
   }
 
+  .ficcao {
+    min-height: 75vh;
+  }
+
   .img-fic img {
     width: 50%;
   }
@@ -1082,6 +1086,10 @@ i #eight {
     font-size: 2rem;
   }
 
+  .ficcao {
+    min-height: 80vh;
+  }
+
   .img-fic img {
     width: 50%;
   }
@@ -1155,6 +1163,10 @@ i #eight {
 
   .animated {
     min-height: 120vh;
+  }
+
+  .ficcao {
+    min-height: 85vh;
   }
 
   .img-fic img {
@@ -1233,6 +1245,10 @@ i #eight {
     background-size: 100%;
   }
 
+  .ficcao {
+    min-height: 90vh;
+  }
+
   .img-ap {
     bottom: -16%;  
     right: -7.5%;    
@@ -1306,6 +1322,10 @@ i #eight {
 
   .animated {
     min-height: 130vh;
+  }
+  
+  .ficcao {
+    min-height: 95vh;
   }
 
   .img-fic img {
