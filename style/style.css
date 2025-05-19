@@ -602,7 +602,7 @@ i #eight {
 .ficcao {
   width: 100%;
   min-height: 80vh;
-  background-image: url(/Paradoxo-do-Saber/src/ficcao.png);
+  background-image: url(/Paradoxo-do-Saber/src/ficcao2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -628,7 +628,7 @@ i #eight {
 .sci {
   width: 100%;
   min-height: 70vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),url(/Paradoxo-do-Saber/src/fundo.png);
+  background-image: url(/Paradoxo-do-Saber/src/fundo2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
