@@ -626,7 +626,13 @@ i #eight {
 /* Section - Sci */
 
 .sci {
-  min-height: 60vh;
+  width: 100%;
+  min-height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),url(/Paradoxo-do-Saber/src/fundo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
 }
 
 .content-sci-title {
@@ -670,7 +676,6 @@ i #eight {
 }
 
 .sci-content:hover {
-  transform: scale(1.05);
   box-shadow: 0 0 25px var(--main-color);
 }
 
@@ -680,6 +685,114 @@ i #eight {
   padding-inline: 5rem;
   text-align: center;
 }
+
+/* Aplication - section*/
+
+.aplication {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+
+.content-ap {
+  width: 80%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.app {
+  background-color: #262D76;
+  width: 90%;
+  height: 450px;
+  display: flex;
+  position: relative;
+  overflow: visible;
+}
+
+.img-ap {
+  position: absolute;
+  bottom: -74px; /* move para fora da div */
+  right: -86px;  /* ajusta a posição à direita */
+  width: 65%;    /* ou ajuste conforme necessário */
+  z-index: 3;
+}
+
+.img-ap img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  /* transform: translateY(-0%); faz a imagem invadir a área de cima */
+}
+
+/* Botões e aplication img */
+
+.left-content {
+  width: 50%;
+  z-index: 2;
+  flex-direction: column;
+  align-items: center; /* CENTRALIZA tudo na horizontal */
+  text-align: center;  /* CENTRALIZA o texto */
+  display: flex;
+  justify-content: center;
+}
+
+.logo-titulo {
+  width: 500px; /* ajuste conforme o tamanho da imagem */
+  height: auto;
+}
+
+.left-content p {
+  width: 500px;
+  font-size: 2.5rem;
+  text-align: left;
+  color: white;
+  margin-bottom: 30px;
+  line-height: 1.4;
+  z-index: 3;
+  transform: translateY(-100%)
+}
+
+.buttons {
+  width: 500px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  gap: 20px;
+}
+
+.btn {
+  padding: 20px 40px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #dcdcdc;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.btn.outline {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn.outline:hover {
+  background-color: white;
+  color: black;
+}
+
+
 
 /* About */
 
@@ -893,6 +1006,61 @@ i #eight {
   .boxx {
     height: 80vh;
   }
+
+  .img-fic img {
+    width: 50%;
+  }
+
+  .h2-sci {
+    width: 32%;
+    transform: translateY(-50%);
+  }
+
+  .sci-content {
+    width: 400px;
+    height: 400px;
+    transform: translateY(-28%);
+  }
+
+  .about-content {
+    width: 600px;
+    height: 400px;
+  }
+
+  .img-ap {
+    bottom: -16.5%;  /* ou -8% se preferir mais sutil */
+    right: -8.5%;    /* pequeno deslocamento à direita */
+    width: 70%;    /* ajuste conforme necessário */
+  }
+
+  .app {
+    height: 350px;
+  }
+
+  .left-content {
+  width: 50%;
+  }
+
+  .logo-titulo {
+    width: 300px; /* ajuste conforme o tamanho da imagem */
+  }
+
+  .left-content p {
+    width: 300px;
+    font-size: 2.5rem;
+    transform: translateY(-80%);
+  }
+
+  .buttons {
+    width: 300px;
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 16px 32px;
+    font-size: 1.5rem;
+  }
+
 }
 /* 1120px */
 
@@ -912,6 +1080,60 @@ i #eight {
 
   .about-project h3 {
     font-size: 2rem;
+  }
+
+  .img-fic img {
+    width: 50%;
+  }
+
+  .h2-sci {
+    width: 34%;
+    transform: translateY(-58%);
+  }
+
+  .sci-content {
+    width: 500px;
+    height: 450px;
+    transform: translateY(-20%);
+  }
+
+  .about-content {
+    width: 700px;
+    height: 500px;
+  }
+
+  .img-ap {
+    bottom: -16%;  /* ou -8% se preferir mais sutil */
+    right: -9%;    /* pequeno deslocamento à direita */
+    width: 75%;    /* ajuste conforme necessário */
+  }
+
+  .app {
+    height: 400px;
+  }
+
+  .left-content {
+    width: 50%;
+  }
+
+  .logo-titulo {
+    width: 300px; /* ajuste conforme o tamanho da imagem */
+  }
+
+  .left-content p {
+    width: 300px;
+    font-size: 2rem;
+    transform: translateY(-60%);
+  }
+
+  .buttons {
+    width: 300px;
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 16px 32px;
+    font-size: 1.2rem;
   }
 }
 
@@ -934,6 +1156,71 @@ i #eight {
   .animated {
     min-height: 120vh;
   }
+
+  .img-fic img {
+    width: 48%;
+  }
+
+  .h2-sci {
+    width: 32%;
+    transform: translateY(-58%);
+  }
+
+  .sci-content {
+    height: 440px;
+  }
+
+  .about-content {
+    height: 450px;
+  }
+
+  .aplication {
+    min-height: 90vh;
+  }
+
+  .content-ap {
+    height: 600px;
+  }
+
+  .app {
+    height: 500px;
+  }
+
+  .img-ap {
+    bottom: -14.5%;  
+    right: -7.5%;   
+    width: 65%;    
+  }
+
+  .app {
+    height: 450px;
+  }
+
+  .left-content {
+    width: 50%;
+  }
+
+  .logo-titulo {
+    width: 400px; 
+  }
+
+  .left-content p {
+    width: 400px;
+    font-size: 2.5rem;
+    transform: translateY(-60%);
+  }
+
+  .buttons {
+    width: 400px;
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 16px 32px;
+    font-size: 1.5rem;
+  }
+
+
 }
 
 /* 1400px */
@@ -943,9 +1230,54 @@ i #eight {
     font-size: 65%;
   }
   .first-sec {
-    /* min-height: 110vh; */
     background-size: 100%;
-    /* background-size: contain; */
+  }
+
+  .img-ap {
+    bottom: -16%;  
+    right: -7.5%;    
+    width: 65%;   
+  }
+
+  .app {
+    height: 450px;
+  }
+
+  .left-content {
+    width: 50%;
+  }
+
+  .logo-titulo {
+    width: 400px; 
+  }
+
+  .left-content p {
+    width: 400px;
+    font-size: 2rem;
+    transform: translateY(-80%);
+  }
+
+  .buttons {
+    width: 400px;
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 18px 36px;
+    font-size: 1.5rem;
+  }
+
+  .img-fic img {
+    width: 48%;
+  }
+
+  .h2-sci {
+    width: 31%;
+    transform: translateY(-58%);
+  }
+
+  .sci-content {
+    transform: translateY(-18%);
   }
 
   .soc {
@@ -974,6 +1306,60 @@ i #eight {
 
   .animated {
     min-height: 130vh;
+  }
+
+  .img-fic img {
+    width: 50%;
+  }
+
+  .h2-sci {
+    width: 32%;
+    transform: translateY(-65%);
+  }
+
+  .sci-content {
+    width: 600px;
+    height: 500px;
+    transform: translateY(-18%);
+  }
+
+  .about-content {
+    width: 800px;
+    height: 550px;
+  }
+
+  .img-ap {
+    bottom: -17.5%;  /* ou -8% se preferir mais sutil */
+    right: -7.5%;    /* pequeno deslocamento à direita */
+    width: 65%;    /* ajuste conforme necessário */
+  }
+
+  .app {
+    height: 450px;
+  }
+
+  .left-content {
+    width: 50%;
+  }
+
+  .logo-titulo {
+    width: 500px; /* ajuste conforme o tamanho da imagem */
+  }
+
+  .left-content p {
+    width: 500px;
+    font-size: 2rem;
+    transform: translateY(-90%);
+  }
+
+  .buttons {
+    width: 500px;
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 18px 36px;
+    font-size: 1.6rem;
   }
 
   .news h3,
@@ -1026,9 +1412,67 @@ i #eight {
     min-height: 130vh;
   }
 
-  /* .boxx {
-    min-height: 110vh;
-  } */
+  .img-fic img {
+    width: 48%;
+  }
+
+  .h2-sci {
+    width: 31%;
+    transform: translateY(-65%);
+  }
+
+  .sci-content {
+    width: 600px;
+    height: 500px;
+    transform: translateY(-18%);
+  }
+
+  .about-content {
+    width: 800px;
+    height: 550px;
+  }
+
+  .aplication {
+    min-height: 60vh;
+  }
+
+  .img-ap {
+    bottom: -17.5%;  /* ou -8% se preferir mais sutil */
+    right: -8%;    /* pequeno deslocamento à direita */
+    width: 65%;    /* ajuste conforme necessário */
+  }
+
+  .content-ap {
+    height: 700px;
+  }
+
+  .app {
+    height: 500px;
+  }
+
+  .left-content {
+    width: 50%;
+  }
+
+  .logo-titulo {
+    width: 550px; /* ajuste conforme o tamanho da imagem */
+  }
+
+  .left-content p {
+    width: 550px;
+    font-size: 2rem;
+    transform: translateY(-100%);
+  }
+
+  .buttons {
+    width: 550px;
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 18px 36px;
+    font-size: 1.6rem;
+  }
 
   .box .item {
     width: 24vw;
@@ -1038,10 +1482,6 @@ i #eight {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-
-  .about {
-    max-width: 1400px;
   }
 
   .timeline-items {
@@ -1069,6 +1509,68 @@ i #eight {
     max-width: 650px;
     max-height: 975px;
   }
+
+  .img-fic img {
+    width: 45%;
+  }
+
+  .h2-sci {
+    width: 29%;
+    transform: translateY(-65%);
+  }
+
+  .sci-content {
+    width: 600px;
+    height: 500px;
+    transform: translateY(-18%);
+  }
+
+  .about-content {
+    width: 800px;
+    height: 550px;
+  }
+
+  .aplication {
+    min-height: 70vh;
+  }
+
+  .img-ap {
+    bottom: -15.5%;  /* ou -8% se preferir mais sutil */
+    right: -7.5%;    /* pequeno deslocamento à direita */
+    width: 62%;    /* ajuste conforme necessário */
+  }
+
+  .content-ap {
+    height: 700px;
+  }
+
+  .app {
+    height: 550px;
+  }
+
+  .left-content {
+    width: 50%;
+  }
+
+  .logo-titulo {
+    width: 600px; /* ajuste conforme o tamanho da imagem */
+  }
+
+  .left-content p {
+    width: 600px;
+    font-size: 2.5rem;
+    transform: translateY(-100%);
+  }
+
+  .buttons {
+    width: 600px;
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 20px 40px;
+    font-size: 1.8rem;
+  }
 }
 
 /* 2000 */
@@ -1090,8 +1592,62 @@ i #eight {
     min-height: 120vh;
   }
 
-  .about {
-    max-width: 1500px;
+  .h2-sci {
+    width: 29%;
+    transform: translateY(-70%);
+  }
+
+  .sci-content {
+    width: 700px;
+    height: 550px;
+    transform: translateY(-18%);
+  }
+
+  .about-content {
+    width: 1200px;
+    height: 700px;
+  }
+
+  .aplication {
+    min-height: 80vh;
+  }
+
+  .img-ap {
+    bottom: -15.5%;  /* ou -8% se preferir mais sutil */
+    right: -7.5%;    /* pequeno deslocamento à direita */
+    width: 62%;    /* ajuste conforme necessário */
+  }
+
+  .content-ap {
+    height: 800px;
+  }
+
+  .app {
+    height: 600px;
+  }
+
+  .left-content {
+    width: 50%;
+  }
+
+  .logo-titulo {
+    width: 650px; /* ajuste conforme o tamanho da imagem */
+  }
+
+  .left-content p {
+    width: 650px;
+    font-size: 2.5rem;
+    transform: translateY(-100%);
+  }
+
+  .buttons {
+    width: 650px;
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 22px 44px;
+    font-size: 2rem;
   }
 
   .timeline-items {
