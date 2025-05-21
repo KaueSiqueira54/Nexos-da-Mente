@@ -330,13 +330,19 @@ span {
 /* Frase */
 
 .soc {
-  max-width: 1200px;
-  height: 400px;
+  padding: 5rem;
+  width: 100%;
+  height: auto;
   display: flex;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.fra {
+  width: 80%;
+  border: 1px solid red;
   color: #d4af37;
   border: 1px solid var(--main-color);
   background-color: #1a1a1a;
@@ -344,7 +350,11 @@ span {
   transition: 0.3s ease-in-out;
 }
 
-.soc:hover {
+.fra img {
+  width: 100%;
+}
+
+.fra:hover {
   transform: scale(1.05);
   box-shadow: 0 0 25px var(--main-color);
 }
@@ -370,6 +380,10 @@ span {
   background: var(--bg-color);
 }
 
+.news h3 {
+  text-decoration: underline;
+}
+
 .timeline-items {
   max-width: 1200px;
   margin: auto;
@@ -377,6 +391,7 @@ span {
   flex-wrap: wrap;
   position: relative;
   padding-top: 5rem;
+  font-style: italic;
 }
 
 .timeline-items::before {
@@ -430,25 +445,21 @@ span {
 }
 
 .timeline-content img {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   padding-bottom: 2rem;
-  border-radius: 10px;
+  border-radius: 20%;
 }
 
 /* Primeira obra */
 
 #first {
-  color: #d61a14;
+  color: #F28402;
 }
 
-i #first {
-  color: #d61a14;
-  text-decoration: underline;
-}
 
 /* Segunda obra */
 
@@ -458,7 +469,6 @@ i #first {
 
 i #second {
   color: #d72630;
-  text-decoration: underline;
 }
 
 /* terceira obra*/
@@ -467,10 +477,6 @@ i #second {
   color: #564ba9;
 }
 
-i #third {
-  color: #564ba9;
-  text-decoration: underline;
-}
 
 /* Quarta obra */
 
@@ -478,43 +484,27 @@ i #third {
   color: #fffdee;
 }
 
-i #fourtyd {
-  color: #fffdee;
-  text-decoration: underline;
-}
 
 /* Quinta obra */
 
 #fiftyd {
-  color: #f5bb0d;
+  color: #E5C79C;
 }
 
-i #fiftyd {
-  color: #f5bb0d;
-  text-decoration: underline;
-}
 
 /* Sexta Obra */
 
 #sixtyd {
-  color: #a9cc54;
+  color: #fda32f;
 }
 
-i #sixtyd {
-  color: #a9cc54;
-  text-decoration: underline;
-}
 
 /* Sétima Obra */
 
 #seven {
-  color: #dd222a;
+  color: #A6CD3A;
 }
 
-i #seven {
-  color: #dd222a;
-  text-decoration: underline;
-}
 
 /* Oitava Obra */
 
@@ -522,10 +512,6 @@ i #seven {
   color: #a4a3a1;
 }
 
-i #eight {
-  color: #a4a3a1;
-  text-decoration: underline;
-}
 
 /* Conteúdo */
 .timeline-content {
@@ -798,6 +784,7 @@ i #eight {
 
 .about {
   min-height: 80vh;
+  padding-top: 5rem;
 }
 
 .about-content {
@@ -1187,7 +1174,7 @@ i #eight {
   }
 
   .aplication {
-    min-height: 90vh;
+    min-height: 80vh;
   }
 
   .content-ap {
@@ -1348,6 +1335,14 @@ i #eight {
     height: 550px;
   }
 
+  .fra {
+    width: 50%;
+  }
+
+  .aplication {
+    min-height: 60vh;
+  }
+
   .img-ap {
     bottom: -17.5%;  /* ou -8% se preferir mais sutil */
     right: -7.5%;    /* pequeno deslocamento à direita */
@@ -1426,6 +1421,10 @@ i #eight {
   .soc {
     max-width: 1000px;
     height: 400px;
+  }
+
+  .fra {
+    width: 80%;
   }
 
   .animated {
@@ -1531,18 +1530,18 @@ i #eight {
   }
 
   .img-fic img {
-    width: 45%;
+    width: 55%;
   }
 
   .h2-sci {
-    width: 29%;
+    width: 33%;
     transform: translateY(-65%);
   }
 
   .sci-content {
     width: 600px;
     height: 500px;
-    transform: translateY(-18%);
+    transform: translateY(-10%);
   }
 
   .about-content {
@@ -1562,6 +1561,14 @@ i #eight {
 
   .content-ap {
     height: 700px;
+  }
+
+  .timeline-items {
+    max-width: 1500px;
+  }
+
+  .fra {
+    width: 50%;
   }
 
   .app {
@@ -1590,6 +1597,16 @@ i #eight {
   .btn {
     padding: 20px 40px;
     font-size: 1.8rem;
+  }
+
+  .news p {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .news h3, .timeline-date {
+  font-size: 2.5rem;
+  line-height: 1.4; /* ou use valor absoluto, ex: 4.2rem */
   }
 }
 
@@ -1620,7 +1637,7 @@ i #eight {
   .sci-content {
     width: 700px;
     height: 550px;
-    transform: translateY(-18%);
+    transform: translateY(-10%);
   }
 
   .about-content {
@@ -1630,6 +1647,10 @@ i #eight {
 
   .aplication {
     min-height: 80vh;
+  }
+
+  .fra {
+    width: 60%;
   }
 
   .img-ap {
@@ -1676,5 +1697,12 @@ i #eight {
 
   .news p {
     font-size: 2rem;
+    letter-spacing: 1px;
   }
+
+  .news h3, .timeline-date {
+  font-size: 2.5rem;
+  line-height: 1.4; /* ou use valor absoluto, ex: 4.2rem */
+  }
+
 }
