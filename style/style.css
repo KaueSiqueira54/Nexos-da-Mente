@@ -182,7 +182,7 @@ span {
   cursor: pointer;
 }
 
-/* Distribuição visual — ajustar para mais ou menos espaçamento */
+/* Distribuição visual */
 .box .item:nth-child(1) {
   transform: translate3d(-60vw, -50%, 0) scale(0.8) rotateY(25deg);
   z-index: 1;
@@ -573,7 +573,7 @@ i #second {
   margin-right: 20px;
 }
 
-/* Animação contínua sem falha */
+/* Animação contínua */
 @keyframes marquee {
   0% {
     transform: translateX(0%);
@@ -606,7 +606,7 @@ i #second {
   bottom: 0;
   right: 0;
   z-index: 2;
-  transform: translateY(-0%); /* faz a imagem invadir a área de cima */
+  transform: translateY(-0%); 
 }
 
 /* Section - Sci */
@@ -700,9 +700,9 @@ i #second {
 
 .img-ap {
   position: absolute;
-  bottom: -74px; /* move para fora da div */
-  right: -86px;  /* ajusta a posição à direita */
-  width: 65%;    /* ou ajuste conforme necessário */
+  bottom: -74px;
+  right: -86px;  
+  width: 65%;    
   z-index: 3;
 }
 
@@ -710,7 +710,6 @@ i #second {
   width: 100%;
   height: auto;
   object-fit: contain;
-  /* transform: translateY(-0%); faz a imagem invadir a área de cima */
 }
 
 /* Botões e aplication img */
@@ -719,14 +718,14 @@ i #second {
   width: 50%;
   z-index: 2;
   flex-direction: column;
-  align-items: center; /* CENTRALIZA tudo na horizontal */
-  text-align: center;  /* CENTRALIZA o texto */
+  align-items: center; 
+  text-align: center;  
   display: flex;
   justify-content: center;
 }
 
 .logo-titulo {
-  width: 500px; /* ajuste conforme o tamanho da imagem */
+  width: 500px; 
   height: auto;
 }
 
@@ -1019,9 +1018,9 @@ i #second {
   }
 
   .img-ap {
-    bottom: -16.5%;  /* ou -8% se preferir mais sutil */
-    right: -8.5%;    /* pequeno deslocamento à direita */
-    width: 70%;    /* ajuste conforme necessário */
+    bottom: -16.5%;  
+    right: -8.5%;    
+    width: 70%;    
   }
 
   .app {
@@ -1033,7 +1032,7 @@ i #second {
   }
 
   .logo-titulo {
-    width: 300px; /* ajuste conforme o tamanho da imagem */
+    width: 300px; 
   }
 
   .left-content p {
@@ -1098,9 +1097,9 @@ i #second {
   }
 
   .img-ap {
-    bottom: -16%;  /* ou -8% se preferir mais sutil */
-    right: -9%;    /* pequeno deslocamento à direita */
-    width: 75%;    /* ajuste conforme necessário */
+    bottom: -16%;  
+    right: -9%;    
+    width: 75%;  
   }
 
   .app {
@@ -1112,7 +1111,7 @@ i #second {
   }
 
   .logo-titulo {
-    width: 300px; /* ajuste conforme o tamanho da imagem */
+    width: 300px; 
   }
 
   .left-content p {
@@ -1344,9 +1343,9 @@ i #second {
   }
 
   .img-ap {
-    bottom: -17.5%;  /* ou -8% se preferir mais sutil */
-    right: -7.5%;    /* pequeno deslocamento à direita */
-    width: 65%;    /* ajuste conforme necessário */
+    bottom: -17.5%;  
+    right: -7.5%;    
+    width: 65%;    
   }
 
   .app {
@@ -1358,7 +1357,7 @@ i #second {
   }
 
   .logo-titulo {
-    width: 500px; /* ajuste conforme o tamanho da imagem */
+    width: 500px; 
   }
 
   .left-content p {
@@ -1413,7 +1412,7 @@ i #second {
 
 /* 1700px */
 
-@media (min-width: 1700px) and (max-width: 1800px) {
+@media (min-width: 1700px) and (max-width: 1790px) {
   html {
     font-size: 72%;
   }
@@ -1456,9 +1455,9 @@ i #second {
   }
 
   .img-ap {
-    bottom: -17.5%;  /* ou -8% se preferir mais sutil */
-    right: -8%;    /* pequeno deslocamento à direita */
-    width: 65%;    /* ajuste conforme necessário */
+    bottom: -17.5%;  
+    right: -8%;   
+    width: 65%;    
   }
 
   .content-ap {
@@ -1474,7 +1473,7 @@ i #second {
   }
 
   .logo-titulo {
-    width: 550px; /* ajuste conforme o tamanho da imagem */
+    width: 550px; 
   }
 
   .left-content p {
@@ -1517,7 +1516,7 @@ i #second {
 
 /* 1800px */
 
-@media (min-width: 1800px) and (max-width: 2000px) {
+@media (min-width: 1790px) and (max-width: 2000px) {
   html {
     font-size: 72%;
   }
@@ -1554,9 +1553,9 @@ i #second {
   }
 
   .img-ap {
-    bottom: -15.5%;  /* ou -8% se preferir mais sutil */
-    right: -7.5%;    /* pequeno deslocamento à direita */
-    width: 62%;    /* ajuste conforme necessário */
+    bottom: -15.5%;  
+    right: -7.5%;    
+    width: 62%;   
   }
 
   .content-ap {
@@ -1580,7 +1579,7 @@ i #second {
   }
 
   .logo-titulo {
-    width: 600px; /* ajuste conforme o tamanho da imagem */
+    width: 600px; 
   }
 
   .left-content p {
@@ -1606,7 +1605,7 @@ i #second {
 
   .news h3, .timeline-date {
   font-size: 2.5rem;
-  line-height: 1.4; /* ou use valor absoluto, ex: 4.2rem */
+  line-height: 1.4; 
   }
 }
 
@@ -1654,9 +1653,9 @@ i #second {
   }
 
   .img-ap {
-    bottom: -15.5%;  /* ou -8% se preferir mais sutil */
-    right: -7.5%;    /* pequeno deslocamento à direita */
-    width: 62%;    /* ajuste conforme necessário */
+    bottom: -15.5%;  
+    right: -7.5%;    
+    width: 62%;    
   }
 
   .content-ap {
@@ -1672,7 +1671,7 @@ i #second {
   }
 
   .logo-titulo {
-    width: 650px; /* ajuste conforme o tamanho da imagem */
+    width: 650px; 
   }
 
   .left-content p {
@@ -1702,7 +1701,7 @@ i #second {
 
   .news h3, .timeline-date {
   font-size: 2.5rem;
-  line-height: 1.4; /* ou use valor absoluto, ex: 4.2rem */
+  line-height: 1.4; 
   }
 
 }
