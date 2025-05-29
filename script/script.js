@@ -84,7 +84,7 @@ document.querySelectorAll(".item").forEach((item, index) => {
 
 
 let autoplayInterval = 3000; // tempo normal entre trocas (3s)
-let autoplayPauseAfterClick = 15000; // tempo de pausa após interação (20s)
+let autoplayPauseAfterClick = 15000; // tempo de pausa após interação (15s)
 let autoplay;
 let isHovering = false; // flag para hover sobre imagem
 let hoverPaused = false;
