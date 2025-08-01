@@ -967,201 +967,6 @@ i #second {
 
 /* 400px */
 
-@media (min-width: 400px) {
-  html {
-    font-size: 50%;
-  }
-
-  /* Header */
-
-  .header {
-    flex-direction: row;
-  }
-
-  .navbar a:hover,
-  .navbar a.active {
-    color: var(--main-color);
-    border-bottom: 3px solid var(--main-color);
-  }
-
-  #menu-icon {
-    font-size: 3rem;
-    display: block;
-  }
-  .navbar {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 30%;
-    padding: 1rem 3%;
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(20px);
-    border-bottom-left-radius: 2rem;
-    border-left: 2px solid var(--main-color);
-    border-bottom: 2px solid var(--main-color);
-    display: none;
-  }
-  /* sections */
-
-  .first-sec {
-    min-height: 40vh;
-  }
-
-  .first-sec video {
-    margin-top: 5rem;
-  }
-
-  .titleh2 {
-    height: 50px;
-  }
-
-  .titleh2 h2 {
-    font-size: 2rem;
-  }
-
-  .navbar.active {
-    display: block;
-  }
-
-  .navbar a {
-    display: block;
-    font-size: 2rem;
-    margin: 3rem 0;
-    color: #fff;
-  }
-
-  /* div .box */
-
-  .boxx {
-    height: 70vw;
-    background-size: 10%;
-  }
-
-  .box .item {
-    width: 40vw;
-    height: 50vw;
-    left: 35%;
-  }
-
-  .box .item img {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    object-fit: fill;
-  }
-
-  .timeline-items::before {
-    left: 7px;
-  }
-
-  .timeline-item:nth-child(odd) {
-    padding-right: 0;
-    text-align: left;
-  }
-
-  .timeline-item:nth-child(odd),
-  .timeline-item:nth-child(even) {
-    padding-left: 37px;
-  }
-
-  .timeline-dot {
-    left: 0;
-  }
-
-  /* Fic */
-
-  .fic {
-    height: 70px;
-  }
-
-  .slider img {
-    width: 130px;
-  }
-
-  /* Ficcao */
-
-  .ficcao {
-    width: 100%;
-    min-height: 80vh;
-    background-image: url(/Paradoxo-do-Saber/src/ficcao2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
-  }
-
-  .img-fic {
-    justify-content: center;
-  }
-
-  .img-fic img {
-    width: 90%;
-  }
-
-  /* h2 - sci */
-
-  .content-sci-title {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-  }
-
-  .h2-sci {
-    width: 100%;
-    height: 150px;
-    z-index: 2;
-    transform: translateY(-40%);
-  }
-
-  .h2-sci h2 {
-    text-align: start;
-    font-size: 7rem;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-  }
-
-  /* Sci-content */
-
-  .sci-content {
-    width: 350px;
-    height: auto;
-  }
-
-  .sci-content p {
-    font-size: 2rem;
-  }
-
-  /* About */
-
-  .about {
-    min-height: 70vh;
-    padding-top: 1.5rem;
-    padding-bottom: 2rem;
-  }
-
-  .about-content {
-    max-width: 350px;
-    height: auto;
-  }
-
-  .about-content p {
-    padding: 1rem;
-  }
-
-  /* footer */
-
-  .footer ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .footer .copyright {
-    font-size: 1.8rem;
-    padding: 1rem;
-  }
-}
-
 /* 1023px */
 
 @media (min-width: 1023px) and (max-width: 1120px) {
@@ -1891,5 +1696,427 @@ i #second {
   .timeline-date {
     font-size: 2.5rem;
     line-height: 1.4;
+  }
+}
+
+/* Mobile */
+
+@media (min-width: 360px) {
+  html {
+    font-size: 50%;
+  }
+
+  /* Header */
+
+  .header {
+    flex-direction: row;
+  }
+
+  .navbar a:hover,
+  .navbar a.active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+  }
+
+  #menu-icon {
+    font-size: 3rem;
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 30%;
+    padding: 1rem 3%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    border-bottom-left-radius: 2rem;
+    border-left: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    display: none;
+  }
+  /* sections */
+
+  .first-sec {
+    min-height: 40vh;
+  }
+
+  .first-sec video {
+    margin-top: 5rem;
+  }
+
+  .titleh2 {
+    height: 50px;
+  }
+
+  .titleh2 h2 {
+    font-size: 2rem;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    color: #fff;
+  }
+
+  /* div .box */
+
+  .boxx {
+    height: 70vw;
+    background-size: 10%;
+  }
+
+  .box .item {
+    width: 40vw;
+    height: 50vw;
+    left: 32.5%;
+  }
+
+  .box .item img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    object-fit: fill;
+  }
+
+  .timeline-items::before {
+    left: 7px;
+  }
+
+  .timeline-item:nth-child(odd) {
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    padding-left: 37px;
+  }
+
+  .timeline-dot {
+    left: 0;
+  }
+
+  /* Fic */
+
+  .fic {
+    height: 70px;
+  }
+
+  .slider img {
+    width: 130px;
+  }
+
+  /* Ficcao */
+
+  .ficcao {
+    width: 100%;
+    min-height: 80vh;
+    background-image: url(/Paradoxo-do-Saber/src/ficcao2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+  }
+
+  .img-fic {
+    justify-content: center;
+  }
+
+  .img-fic img {
+    width: calc(100% - 1vw);
+  }
+
+  /* h2 - sci */
+
+  .content-sci-title {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .h2-sci {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+    z-index: 2;
+    transform: translateY(-40%);
+    padding-left: 2rem;
+    align-items: left;
+  }
+
+  .h2-sci h2 p {
+    text-align: right;
+    font-size: 7rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
+  /* Sci-content */
+
+  .sci-content {
+    width: 85%;
+    height: auto;
+  }
+
+  .sci-content p {
+    font-size: 2rem;
+  }
+
+  /* About */
+
+  .about {
+    min-height: 70vh;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .about-content {
+    max-width: 85%;
+    height: auto;
+  }
+
+  .about-content p {
+    padding: 1rem;
+  }
+
+  /* footer */
+
+  .footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer .copyright {
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+}
+
+/* 460px até 767px */
+
+@media (min-width: 461px) and (max-width: 600px) {
+  .img-fic img {
+    width: calc(85% - 10vw);
+  }
+
+  .sci-content {
+    width: 70%;
+    height: auto;
+  }
+
+  .about-content {
+    max-width: 70%;
+    height: auto;
+  }
+}
+
+/* 601px */
+
+@media (min-width: 601px) and (max-width: 767px) {
+  .img-fic img {
+    width: calc(85% - 20vw);
+  }
+
+  .sci-content {
+    width: 60%;
+    height: auto;
+  }
+
+  .about-content {
+    max-width: 60%;
+    height: auto;
+  }
+}
+
+/* 768 */
+
+@media (min-width: 768px) and (max-width: 850px) {
+  .titleh2 h2 {
+    font-size: 2.5rem;
+  }
+
+  .boxx {
+    height: 70vw;
+  }
+
+  .box .item {
+    width: 30vw;
+    height: 40vw;
+    left: 36%;
+  }
+
+  .news {
+    padding: 5rem;
+  }
+
+  .ficcao {
+    height: 90vh;
+  }
+
+  .img-fic img {
+    width: calc(85% - 30vw);
+  }
+
+  .sci-content {
+    width: 50%;
+    height: auto;
+  }
+
+  .about-content {
+    max-width: 50%;
+    height: auto;
+  }
+
+  .soc {
+    width: 80%;
+  }
+
+  .timeline-items {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .timeline-items::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: var(--main-color);
+    left: calc(50% - 1px);
+  }
+
+  .timeline-item {
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+  }
+
+  .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .timeline-item:nth-child(odd) {
+    padding-right: calc(50% + 30px);
+    text-align: right;
+  }
+
+  .timeline-item:nth-child(even) {
+    padding-left: calc(50% + 30px);
+  }
+
+  .timeline-dot {
+    height: 21px;
+    width: 21px;
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 1022px) {
+  .titleh2 h2 {
+    font-size: 3rem;
+  }
+
+  .boxx {
+    height: 70vw;
+  }
+
+  .box .item {
+    width: 30vw;
+    height: 40vw;
+    left: 36%;
+  }
+
+  .news {
+    padding: 5rem;
+  }
+
+  .ficcao {
+    height: 90vh;
+  }
+
+  .img-fic img {
+    width: calc(85% - 30vw);
+  }
+
+  .h2-sci {
+    align-items: flex-end;
+    padding-right: 5rem;
+  }
+
+  .sci-content {
+    width: 50%;
+    height: auto;
+  }
+
+  .about-content {
+    max-width: 50%;
+    height: auto;
+  }
+
+  .soc {
+    width: 80%;
+  }
+
+  .timeline-items {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .timeline-items::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: var(--main-color);
+    left: calc(50% - 1px);
+  }
+
+  .timeline-item {
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+  }
+
+  .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .timeline-item:nth-child(odd) {
+    padding-right: calc(50% + 30px);
+    text-align: right;
+  }
+
+  .timeline-item:nth-child(even) {
+    padding-left: calc(50% + 30px);
+  }
+
+  .timeline-dot {
+    height: 21px;
+    width: 21px;
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
   }
 }
