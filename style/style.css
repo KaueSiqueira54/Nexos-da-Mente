@@ -457,9 +457,8 @@ span {
 /* Primeira obra */
 
 #first {
-  color: #F28402;
+  color: #f28402;
 }
-
 
 /* Segunda obra */
 
@@ -477,20 +476,17 @@ i #second {
   color: #564ba9;
 }
 
-
 /* Quarta obra */
 
 #fourtyd {
   color: #fffdee;
 }
 
-
 /* Quinta obra */
 
 #fiftyd {
-  color: #E5C79C;
+  color: #e5c79c;
 }
-
 
 /* Sexta Obra */
 
@@ -498,20 +494,17 @@ i #second {
   color: #fda32f;
 }
 
-
 /* Sétima Obra */
 
 #seven {
-  color: #A6CD3A;
+  color: #a6cd3a;
 }
-
 
 /* Oitava Obra */
 
 #eight {
   color: #a4a3a1;
 }
-
 
 /* Conteúdo */
 .timeline-content {
@@ -606,7 +599,7 @@ i #second {
   bottom: 0;
   right: 0;
   z-index: 2;
-  transform: translateY(-0%); 
+  transform: translateY(-0%);
 }
 
 /* Section - Sci */
@@ -690,7 +683,7 @@ i #second {
 }
 
 .app {
-  background-color: #262D76;
+  background-color: #262d76;
   width: 90%;
   height: 450px;
   display: flex;
@@ -701,8 +694,8 @@ i #second {
 .img-ap {
   position: absolute;
   bottom: -74px;
-  right: -86px;  
-  width: 65%;    
+  right: -86px;
+  width: 65%;
   z-index: 3;
 }
 
@@ -718,14 +711,14 @@ i #second {
   width: 50%;
   z-index: 2;
   flex-direction: column;
-  align-items: center; 
-  text-align: center;  
+  align-items: center;
+  text-align: center;
   display: flex;
   justify-content: center;
 }
 
 .logo-titulo {
-  width: 500px; 
+  width: 500px;
   height: auto;
 }
 
@@ -737,7 +730,7 @@ i #second {
   margin-bottom: 30px;
   line-height: 1.4;
   z-index: 3;
-  transform: translateY(-100%)
+  transform: translateY(-100%);
 }
 
 .buttons {
@@ -776,8 +769,6 @@ i #second {
   background-color: white;
   color: black;
 }
-
-
 
 /* About */
 
@@ -951,7 +942,7 @@ i #second {
 
 /* Esconde todo o conteúdo para telas menores que 1024px */
 
-@media (max-width: 1023px) {
+/* @media (max-width: 1023px) {
   body {
     display: flex;
     justify-content: center;
@@ -969,6 +960,205 @@ i #second {
 
   body::before {
     content: "Este site está disponível apenas em telas de computador.";
+  }
+} */
+
+/* Responsivity */
+
+/* 400px */
+
+@media (min-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+
+  /* Header */
+
+  .header {
+    flex-direction: row;
+  }
+
+  .navbar a:hover,
+  .navbar a.active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+  }
+
+  #menu-icon {
+    font-size: 3rem;
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 30%;
+    padding: 1rem 3%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    border-bottom-left-radius: 2rem;
+    border-left: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    display: none;
+  }
+  /* sections */
+
+  .first-sec {
+    min-height: 40vh;
+  }
+
+  .first-sec video {
+    margin-top: 5rem;
+  }
+
+  .titleh2 {
+    height: 50px;
+  }
+
+  .titleh2 h2 {
+    font-size: 2rem;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    color: #fff;
+  }
+
+  /* div .box */
+
+  .boxx {
+    height: 70vw;
+    background-size: 10%;
+  }
+
+  .box .item {
+    width: 40vw;
+    height: 50vw;
+    left: 35%;
+  }
+
+  .box .item img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    object-fit: fill;
+  }
+
+  .timeline-items::before {
+    left: 7px;
+  }
+
+  .timeline-item:nth-child(odd) {
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    padding-left: 37px;
+  }
+
+  .timeline-dot {
+    left: 0;
+  }
+
+  /* Fic */
+
+  .fic {
+    height: 70px;
+  }
+
+  .slider img {
+    width: 130px;
+  }
+
+  /* Ficcao */
+
+  .ficcao {
+    width: 100%;
+    min-height: 80vh;
+    background-image: url(/Paradoxo-do-Saber/src/ficcao2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+  }
+
+  .img-fic {
+    justify-content: center;
+  }
+
+  .img-fic img {
+    width: 90%;
+  }
+
+  /* h2 - sci */
+
+  .content-sci-title {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .h2-sci {
+    width: 100%;
+    height: 150px;
+    z-index: 2;
+    transform: translateY(-40%);
+  }
+
+  .h2-sci h2 {
+    text-align: start;
+    font-size: 7rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
+  /* Sci-content */
+
+  .sci-content {
+    width: 350px;
+    height: auto;
+  }
+
+  .sci-content p {
+    font-size: 2rem;
+  }
+
+  /* About */
+
+  .about {
+    min-height: 70vh;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .about-content {
+    max-width: 350px;
+    height: auto;
+  }
+
+  .about-content p {
+    padding: 1rem;
+  }
+
+  /* footer */
+
+  .footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer .copyright {
+    font-size: 1.8rem;
+    padding: 1rem;
   }
 }
 
@@ -1018,9 +1208,9 @@ i #second {
   }
 
   .img-ap {
-    bottom: -16.5%;  
-    right: -8.5%;    
-    width: 70%;    
+    bottom: -16.5%;
+    right: -8.5%;
+    width: 70%;
   }
 
   .app {
@@ -1028,11 +1218,11 @@ i #second {
   }
 
   .left-content {
-  width: 50%;
+    width: 50%;
   }
 
   .logo-titulo {
-    width: 300px; 
+    width: 300px;
   }
 
   .left-content p {
@@ -1050,7 +1240,6 @@ i #second {
     padding: 16px 32px;
     font-size: 1.5rem;
   }
-
 }
 /* 1120px */
 
@@ -1097,9 +1286,9 @@ i #second {
   }
 
   .img-ap {
-    bottom: -16%;  
-    right: -9%;    
-    width: 75%;  
+    bottom: -16%;
+    right: -9%;
+    width: 75%;
   }
 
   .app {
@@ -1111,7 +1300,7 @@ i #second {
   }
 
   .logo-titulo {
-    width: 300px; 
+    width: 300px;
   }
 
   .left-content p {
@@ -1185,9 +1374,9 @@ i #second {
   }
 
   .img-ap {
-    bottom: -14.5%;  
-    right: -7.5%;   
-    width: 65%;    
+    bottom: -14.5%;
+    right: -7.5%;
+    width: 65%;
   }
 
   .app {
@@ -1199,7 +1388,7 @@ i #second {
   }
 
   .logo-titulo {
-    width: 400px; 
+    width: 400px;
   }
 
   .left-content p {
@@ -1217,8 +1406,6 @@ i #second {
     padding: 16px 32px;
     font-size: 1.5rem;
   }
-
-
 }
 
 /* 1400px */
@@ -1236,9 +1423,9 @@ i #second {
   }
 
   .img-ap {
-    bottom: -16%;  
-    right: -7.5%;    
-    width: 65%;   
+    bottom: -16%;
+    right: -7.5%;
+    width: 65%;
   }
 
   .app {
@@ -1250,7 +1437,7 @@ i #second {
   }
 
   .logo-titulo {
-    width: 400px; 
+    width: 400px;
   }
 
   .left-content p {
@@ -1309,7 +1496,7 @@ i #second {
   .animated {
     min-height: 130vh;
   }
-  
+
   .ficcao {
     min-height: 95vh;
   }
@@ -1343,9 +1530,9 @@ i #second {
   }
 
   .img-ap {
-    bottom: -17.5%;  
-    right: -7.5%;    
-    width: 65%;    
+    bottom: -17.5%;
+    right: -7.5%;
+    width: 65%;
   }
 
   .app {
@@ -1357,7 +1544,7 @@ i #second {
   }
 
   .logo-titulo {
-    width: 500px; 
+    width: 500px;
   }
 
   .left-content p {
@@ -1455,9 +1642,9 @@ i #second {
   }
 
   .img-ap {
-    bottom: -17.5%;  
-    right: -8%;   
-    width: 65%;    
+    bottom: -17.5%;
+    right: -8%;
+    width: 65%;
   }
 
   .content-ap {
@@ -1473,7 +1660,7 @@ i #second {
   }
 
   .logo-titulo {
-    width: 550px; 
+    width: 550px;
   }
 
   .left-content p {
@@ -1553,9 +1740,9 @@ i #second {
   }
 
   .img-ap {
-    bottom: -15.5%;  
-    right: -7.5%;    
-    width: 62%;   
+    bottom: -15.5%;
+    right: -7.5%;
+    width: 62%;
   }
 
   .content-ap {
@@ -1579,7 +1766,7 @@ i #second {
   }
 
   .logo-titulo {
-    width: 600px; 
+    width: 600px;
   }
 
   .left-content p {
@@ -1603,9 +1790,10 @@ i #second {
     letter-spacing: 1px;
   }
 
-  .news h3, .timeline-date {
-  font-size: 2.5rem;
-  line-height: 1.4; 
+  .news h3,
+  .timeline-date {
+    font-size: 2.5rem;
+    line-height: 1.4;
   }
 }
 
@@ -1653,9 +1841,9 @@ i #second {
   }
 
   .img-ap {
-    bottom: -15.5%;  
-    right: -7.5%;    
-    width: 62%;    
+    bottom: -15.5%;
+    right: -7.5%;
+    width: 62%;
   }
 
   .content-ap {
@@ -1671,7 +1859,7 @@ i #second {
   }
 
   .logo-titulo {
-    width: 650px; 
+    width: 650px;
   }
 
   .left-content p {
@@ -1699,9 +1887,9 @@ i #second {
     letter-spacing: 1px;
   }
 
-  .news h3, .timeline-date {
-  font-size: 2.5rem;
-  line-height: 1.4; 
+  .news h3,
+  .timeline-date {
+    font-size: 2.5rem;
+    line-height: 1.4;
   }
-
 }

@@ -4,6 +4,25 @@
 //   alert("Bem-vindo ao Paradoxo do Saber!\nSite em fase de Desenvolvimento.");
 // });
 
+// Teste
+
+const links = document.querySelectorAll(".link");
+
+links.forEach((link) => {
+  link.addEventListener("click", function () {
+    links.forEach((item) => item.classList.remove("active"));
+    this.classList.add("active");
+  });
+});
+
+let menuIcon = document.querySelector("#menu-icon");
+let navbar = document.querySelector(".navbar");
+
+menuIcon.onclick = () => {
+  menuIcon.classList.toggle("bx-x");
+  navbar.classList.toggle("active");
+};
+
 //Botôes
 
 let prev = document.querySelector(".prev");
@@ -81,7 +100,6 @@ document.querySelectorAll(".item").forEach((item, index) => {
     });
   });
 });
-
 
 let autoplayInterval = 3000; // tempo normal entre trocas (3s)
 let autoplayPauseAfterClick = 15000; // tempo de pausa após interação (15s)

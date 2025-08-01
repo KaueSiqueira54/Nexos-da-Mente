@@ -22,6 +22,8 @@
   <header class="header">
     <a href="#home" class="name"><span><i>Paradoxo</i></span> do Saber</a>
 
+    <i class="bx bx-menu" id="menu-icon"></i>
+
     <nav class="navbar">
       <a href="#home" class="link">Home</a>
       <a href="#obras" class="link">Obras-Literárias</a>
@@ -29,6 +31,9 @@
       <a href="#scifi" class="link">Sci-Fi</a>
       <a href="#sobre" class="link">Sobre</a>
       <a href="#contato" class="link">Contato</a>
+      <a href="javascript:void(0)"
+          ><i id="toggleTheme" class="bi bi-sun"></i
+        ></a>
     </nav>
   </header>
   <!-- First Section -->
@@ -73,11 +78,11 @@
     </div>
   </section>
 
-  <div class="titleh2" id="obras">
+  <div class="titleh2" id="obras" style="display: none;">
     <h2>Animação das Obras</h2>
   </div>
   <!-- Section animações -->
-  <section class="animated">
+  <section class="animated" style="display: none;">
     <div class="container">
       <span style="--i: 1">
         <img src="src/love.png" alt="" id="one">
@@ -261,7 +266,7 @@
     </div>
   </section>
   <!-- Section app -->
-  <section class="aplication">
+  <section class="aplication" style="display: none;">
     <div class="content-ap">
       <div class="app">
 
