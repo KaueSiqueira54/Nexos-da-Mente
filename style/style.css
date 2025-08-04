@@ -965,740 +965,6 @@ i #second {
 
 /* Responsivity */
 
-/* 400px */
-
-/* 1023px */
-
-@media (min-width: 1023px) and (max-width: 1120px) {
-  html {
-    font-size: 50%;
-  }
-
-  .soc {
-    width: 700px;
-    height: 300px;
-  }
-
-  .header {
-    width: 100%;
-    padding: 2rem 12% 2rem;
-  }
-
-  .boxx {
-    height: 80vh;
-  }
-
-  .ficcao {
-    min-height: 75vh;
-  }
-
-  .img-fic img {
-    width: 50%;
-  }
-
-  .h2-sci {
-    width: 32%;
-    transform: translateY(-50%);
-  }
-
-  .sci-content {
-    width: 400px;
-    height: 400px;
-    transform: translateY(-28%);
-  }
-
-  .about-content {
-    width: 600px;
-    height: 400px;
-  }
-
-  .img-ap {
-    bottom: -16.5%;
-    right: -8.5%;
-    width: 70%;
-  }
-
-  .app {
-    height: 350px;
-  }
-
-  .left-content {
-    width: 50%;
-  }
-
-  .logo-titulo {
-    width: 300px;
-  }
-
-  .left-content p {
-    width: 300px;
-    font-size: 2.5rem;
-    transform: translateY(-80%);
-  }
-
-  .buttons {
-    width: 300px;
-    gap: 15px;
-  }
-
-  .btn {
-    padding: 16px 32px;
-    font-size: 1.5rem;
-  }
-}
-/* 1120px */
-
-@media (min-width: 1120px) and (max-width: 1200px) {
-  .first-sec {
-    min-height: 98vh;
-  }
-
-  .soc {
-    width: 700px;
-    height: 300px;
-  }
-
-  .animated {
-    min-height: 110vh;
-  }
-
-  .about-project h3 {
-    font-size: 2rem;
-  }
-
-  .ficcao {
-    min-height: 80vh;
-  }
-
-  .img-fic img {
-    width: 50%;
-  }
-
-  .h2-sci {
-    width: 34%;
-    transform: translateY(-58%);
-  }
-
-  .sci-content {
-    width: 500px;
-    height: 450px;
-    transform: translateY(-20%);
-  }
-
-  .about-content {
-    width: 700px;
-    height: 500px;
-  }
-
-  .img-ap {
-    bottom: -16%;
-    right: -9%;
-    width: 75%;
-  }
-
-  .app {
-    height: 400px;
-  }
-
-  .left-content {
-    width: 50%;
-  }
-
-  .logo-titulo {
-    width: 300px;
-  }
-
-  .left-content p {
-    width: 300px;
-    font-size: 2rem;
-    transform: translateY(-60%);
-  }
-
-  .buttons {
-    width: 300px;
-    gap: 15px;
-  }
-
-  .btn {
-    padding: 16px 32px;
-    font-size: 1.2rem;
-  }
-}
-
-/* 1200px */
-
-@media (min-width: 1200px) and (max-width: 1400px) {
-  html {
-    font-size: 60%;
-  }
-
-  .soc {
-    width: 800px;
-    height: 300px;
-  }
-
-  .first-sec {
-    min-height: 100vh;
-  }
-
-  .animated {
-    min-height: 120vh;
-  }
-
-  .ficcao {
-    min-height: 85vh;
-  }
-
-  .img-fic img {
-    width: 48%;
-  }
-
-  .h2-sci {
-    width: 32%;
-    transform: translateY(-58%);
-  }
-
-  .sci-content {
-    height: 440px;
-  }
-
-  .about-content {
-    height: 450px;
-  }
-
-  .aplication {
-    min-height: 80vh;
-  }
-
-  .content-ap {
-    height: 600px;
-  }
-
-  .app {
-    height: 500px;
-  }
-
-  .img-ap {
-    bottom: -14.5%;
-    right: -7.5%;
-    width: 65%;
-  }
-
-  .app {
-    height: 450px;
-  }
-
-  .left-content {
-    width: 50%;
-  }
-
-  .logo-titulo {
-    width: 400px;
-  }
-
-  .left-content p {
-    width: 400px;
-    font-size: 2.5rem;
-    transform: translateY(-60%);
-  }
-
-  .buttons {
-    width: 400px;
-    gap: 15px;
-  }
-
-  .btn {
-    padding: 16px 32px;
-    font-size: 1.5rem;
-  }
-}
-
-/* 1400px */
-
-@media (min-width: 1400px) and (max-width: 1600px) {
-  html {
-    font-size: 65%;
-  }
-  .first-sec {
-    background-size: 100%;
-  }
-
-  .ficcao {
-    min-height: 90vh;
-  }
-
-  .img-ap {
-    bottom: -16%;
-    right: -7.5%;
-    width: 65%;
-  }
-
-  .app {
-    height: 450px;
-  }
-
-  .left-content {
-    width: 50%;
-  }
-
-  .logo-titulo {
-    width: 400px;
-  }
-
-  .left-content p {
-    width: 400px;
-    font-size: 2rem;
-    transform: translateY(-80%);
-  }
-
-  .buttons {
-    width: 400px;
-    gap: 15px;
-  }
-
-  .btn {
-    padding: 18px 36px;
-    font-size: 1.5rem;
-  }
-
-  .img-fic img {
-    width: 48%;
-  }
-
-  .h2-sci {
-    width: 31%;
-    transform: translateY(-58%);
-  }
-
-  .sci-content {
-    transform: translateY(-18%);
-  }
-
-  .soc {
-    width: 800px;
-    height: 300px;
-  }
-
-  .animated {
-    min-height: 130vh;
-  }
-}
-
-/* 1600px */
-
-@media (min-width: 1600px) and (max-width: 1700px) {
-  html {
-    font-size: 70%;
-  }
-
-  .box .item {
-    width: 22vw;
-    height: 33vw;
-    max-width: 550px;
-    max-height: 825px;
-  }
-
-  .animated {
-    min-height: 130vh;
-  }
-
-  .ficcao {
-    min-height: 95vh;
-  }
-
-  .img-fic img {
-    width: 50%;
-  }
-
-  .h2-sci {
-    width: 32%;
-    transform: translateY(-65%);
-  }
-
-  .sci-content {
-    width: 600px;
-    height: 500px;
-    transform: translateY(-18%);
-  }
-
-  .about-content {
-    width: 800px;
-    height: 550px;
-  }
-
-  .fra {
-    width: 50%;
-  }
-
-  .aplication {
-    min-height: 60vh;
-  }
-
-  .img-ap {
-    bottom: -17.5%;
-    right: -7.5%;
-    width: 65%;
-  }
-
-  .app {
-    height: 450px;
-  }
-
-  .left-content {
-    width: 50%;
-  }
-
-  .logo-titulo {
-    width: 500px;
-  }
-
-  .left-content p {
-    width: 500px;
-    font-size: 2rem;
-    transform: translateY(-90%);
-  }
-
-  .buttons {
-    width: 500px;
-    gap: 15px;
-  }
-
-  .btn {
-    padding: 18px 36px;
-    font-size: 1.6rem;
-  }
-
-  .news h3,
-  #first,
-  .timeline-date {
-    font-size: 2.5rem;
-  }
-
-  .timeline-content h3 {
-    line-height: 3rem;
-  }
-
-  .about-project h3 {
-    font-size: 2rem;
-  }
-
-  .news p {
-    font-size: 1.8rem;
-    line-height: 2.5rem;
-  }
-
-  #tex p {
-    font-size: 1.8rem;
-    line-height: 2.5rem;
-  }
-
-  .footer a,
-  h2 {
-    font-size: 1.8rem;
-  }
-
-  .copyright {
-    font-size: 4rem;
-  }
-}
-
-/* 1700px */
-
-@media (min-width: 1700px) and (max-width: 1790px) {
-  html {
-    font-size: 72%;
-  }
-
-  .soc {
-    max-width: 1000px;
-    height: 400px;
-  }
-
-  .fra {
-    width: 80%;
-  }
-
-  .animated {
-    min-height: 130vh;
-  }
-
-  .img-fic img {
-    width: 48%;
-  }
-
-  .h2-sci {
-    width: 31%;
-    transform: translateY(-65%);
-  }
-
-  .sci-content {
-    width: 600px;
-    height: 500px;
-    transform: translateY(-18%);
-  }
-
-  .about-content {
-    width: 800px;
-    height: 550px;
-  }
-
-  .aplication {
-    min-height: 60vh;
-  }
-
-  .img-ap {
-    bottom: -17.5%;
-    right: -8%;
-    width: 65%;
-  }
-
-  .content-ap {
-    height: 700px;
-  }
-
-  .app {
-    height: 500px;
-  }
-
-  .left-content {
-    width: 50%;
-  }
-
-  .logo-titulo {
-    width: 550px;
-  }
-
-  .left-content p {
-    width: 550px;
-    font-size: 2rem;
-    transform: translateY(-100%);
-  }
-
-  .buttons {
-    width: 550px;
-    gap: 15px;
-  }
-
-  .btn {
-    padding: 18px 36px;
-    font-size: 1.6rem;
-  }
-
-  .box .item {
-    width: 24vw;
-    height: 36vw;
-    max-width: 600px;
-    max-height: 900px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .timeline-items {
-    max-width: 1400px;
-  }
-
-  .footer .social a {
-    width: 62px;
-    height: 62px;
-    line-height: 62px;
-    font-size: 35px;
-  }
-}
-
-/* 1800px */
-
-@media (min-width: 1790px) and (max-width: 2000px) {
-  html {
-    font-size: 72%;
-  }
-
-  .box .item {
-    width: 25vw;
-    height: 37.5vw;
-    max-width: 650px;
-    max-height: 975px;
-  }
-
-  .img-fic img {
-    width: 55%;
-  }
-
-  .h2-sci {
-    width: 33%;
-    transform: translateY(-65%);
-  }
-
-  .sci-content {
-    width: 600px;
-    height: 500px;
-    transform: translateY(-10%);
-  }
-
-  .about-content {
-    width: 800px;
-    height: 550px;
-  }
-
-  .aplication {
-    min-height: 70vh;
-  }
-
-  .img-ap {
-    bottom: -15.5%;
-    right: -7.5%;
-    width: 62%;
-  }
-
-  .content-ap {
-    height: 700px;
-  }
-
-  .timeline-items {
-    max-width: 1500px;
-  }
-
-  .fra {
-    width: 50%;
-  }
-
-  .app {
-    height: 550px;
-  }
-
-  .left-content {
-    width: 50%;
-  }
-
-  .logo-titulo {
-    width: 600px;
-  }
-
-  .left-content p {
-    width: 600px;
-    font-size: 2.5rem;
-    transform: translateY(-100%);
-  }
-
-  .buttons {
-    width: 600px;
-    gap: 15px;
-  }
-
-  .btn {
-    padding: 20px 40px;
-    font-size: 1.8rem;
-  }
-
-  .news p {
-    font-size: 2rem;
-    letter-spacing: 1px;
-  }
-
-  .news h3,
-  .timeline-date {
-    font-size: 2.5rem;
-    line-height: 1.4;
-  }
-}
-
-/* 2000px */
-
-@media (min-width: 2000px) {
-  html {
-    font-size: 80%;
-  }
-
-  .header {
-    height: 8rem;
-  }
-
-  .first-sec {
-    min-height: 100vh;
-  }
-
-  .animated {
-    min-height: 120vh;
-  }
-
-  .h2-sci {
-    width: 29%;
-    transform: translateY(-70%);
-  }
-
-  .sci-content {
-    width: 700px;
-    height: 550px;
-    transform: translateY(-10%);
-  }
-
-  .about-content {
-    width: 1200px;
-    height: 700px;
-  }
-
-  .aplication {
-    min-height: 80vh;
-  }
-
-  .fra {
-    width: 60%;
-  }
-
-  .img-ap {
-    bottom: -15.5%;
-    right: -7.5%;
-    width: 62%;
-  }
-
-  .content-ap {
-    height: 800px;
-  }
-
-  .app {
-    height: 600px;
-  }
-
-  .left-content {
-    width: 50%;
-  }
-
-  .logo-titulo {
-    width: 650px;
-  }
-
-  .left-content p {
-    width: 650px;
-    font-size: 2.5rem;
-    transform: translateY(-100%);
-  }
-
-  .buttons {
-    width: 650px;
-    gap: 15px;
-  }
-
-  .btn {
-    padding: 22px 44px;
-    font-size: 2rem;
-  }
-
-  .timeline-items {
-    max-width: 1500px;
-  }
-
-  .news p {
-    font-size: 2rem;
-    letter-spacing: 1px;
-  }
-
-  .news h3,
-  .timeline-date {
-    font-size: 2.5rem;
-    line-height: 1.4;
-  }
-}
-
 /* Mobile */
 
 @media (min-width: 360px) {
@@ -1938,7 +1204,11 @@ i #second {
 
 /* 768 */
 
-@media (min-width: 768px) and (max-width: 850px) {
+@media (min-width: 768px) {
+  .navbar.active {
+    width: 30%;
+  }
+
   .titleh2 h2 {
     font-size: 2.5rem;
   }
@@ -1955,6 +1225,13 @@ i #second {
 
   .news {
     padding: 5rem;
+  }
+
+  .fic {
+    display: flex;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
   }
 
   .ficcao {
@@ -2027,7 +1304,7 @@ i #second {
   }
 }
 
-@media (min-width: 850px) and (max-width: 1022px) {
+@media (min-width: 850px) {
   .titleh2 h2 {
     font-size: 3rem;
   }
@@ -2072,51 +1349,748 @@ i #second {
   .soc {
     width: 80%;
   }
+}
+
+/* 1023px */
+
+@media (min-width: 1023px) and (max-width: 1120px) {
+  html {
+    font-size: 50%;
+  }
+
+  .soc {
+    width: 700px;
+    height: 300px;
+  }
+
+  .header {
+    width: 100%;
+    padding: 2rem 12% 2rem;
+  }
+
+  .boxx {
+    height: 80vh;
+  }
+
+  .box .item {
+    width: 30vw;
+    height: 40vw;
+    left: 40%;
+  }
+
+  .ficcao {
+    min-height: 75vh;
+  }
+
+  .img-fic img {
+    width: 50%;
+  }
+
+  .h2-sci {
+    width: 32%;
+    transform: translateY(-50%);
+  }
+
+  .sci-content {
+    width: 40%;
+    height: auto;
+    transform: translateY(-28%);
+  }
+
+  .about-content {
+    width: 40%;
+    height: auto;
+  }
+
+  .img-ap {
+    bottom: -16.5%;
+    right: -8.5%;
+    width: 70%;
+  }
+
+  .app {
+    height: 350px;
+  }
+
+  .left-content {
+    width: 50%;
+  }
+
+  .logo-titulo {
+    width: 300px;
+  }
+
+  .left-content p {
+    width: 300px;
+    font-size: 2.5rem;
+    transform: translateY(-80%);
+  }
+
+  .buttons {
+    width: 300px;
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 16px 32px;
+    font-size: 1.5rem;
+  }
+}
+/* 1120px */
+
+@media (min-width: 1120px) {
+  .navbar.active {
+    width: 20%;
+  }
+
+  .first-sec {
+    min-height: 98vh;
+  }
+
+  .soc {
+    width: 700px;
+    height: 300px;
+  }
+
+  .animated {
+    min-height: 110vh;
+  }
+
+  .about-project h3 {
+    font-size: 2rem;
+  }
+
+  .ficcao {
+    min-height: 80vh;
+  }
+
+  .img-fic img {
+    width: 50%;
+  }
+
+  .h2-sci {
+    width: 34%;
+    transform: translateY(-58%);
+  }
+
+  .sci-content {
+    width: 35%;
+    height: auto;
+    transform: translateY(-20%);
+  }
+
+  .about-content {
+    width: 35%;
+    height: auto;
+  }
+
+  .img-ap {
+    bottom: -16%;
+    right: -9%;
+    width: 75%;
+  }
+
+  .app {
+    height: 400px;
+  }
+
+  .left-content {
+    width: 50%;
+  }
+
+  .logo-titulo {
+    width: 300px;
+  }
+
+  .left-content p {
+    width: 300px;
+    font-size: 2rem;
+    transform: translateY(-60%);
+  }
+
+  .buttons {
+    width: 300px;
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 16px 32px;
+    font-size: 1.2rem;
+  }
+}
+
+/* 1200px */
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+
+  .boxx {
+    height: 85vh;
+  }
+
+  .box .item {
+    width: 30%;
+    height: 65%;
+  }
+
+  .soc {
+    padding-top: 20rem;
+    width: 800px;
+    height: 300px;
+  }
+
+  .first-sec {
+    min-height: 100vh;
+  }
+
+  .animated {
+    min-height: 120vh;
+  }
+
+  .ficcao {
+    min-height: 85vh;
+  }
+
+  .img-fic img {
+    width: 48%;
+  }
+
+  .h2-sci {
+    width: 32%;
+    transform: translateY(-58%);
+  }
+
+  .sci-content {
+    height: auto;
+  }
+
+  .about-content {
+    height: auto;
+  }
+
+  .aplication {
+    min-height: 80vh;
+  }
+
+  .content-ap {
+    height: 600px;
+  }
+
+  .app {
+    height: 500px;
+  }
+
+  .img-ap {
+    bottom: -14.5%;
+    right: -7.5%;
+    width: 65%;
+  }
+
+  .app {
+    height: 450px;
+  }
+
+  .left-content {
+    width: 50%;
+  }
+
+  .logo-titulo {
+    width: 400px;
+  }
+
+  .left-content p {
+    width: 400px;
+    font-size: 2.5rem;
+    transform: translateY(-60%);
+  }
+
+  .buttons {
+    width: 400px;
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 16px 32px;
+    font-size: 1.5rem;
+  }
+}
+
+/* 1400px */
+
+@media (min-width: 1400px) and (max-width: 1600px) {
+  html {
+    font-size: 65%;
+  }
+  .first-sec {
+    background-size: 100%;
+  }
+
+  .ficcao {
+    min-height: 90vh;
+  }
+
+  .img-ap {
+    bottom: -16%;
+    right: -7.5%;
+    width: 65%;
+  }
+
+  .app {
+    height: 450px;
+  }
+
+  .left-content {
+    width: 50%;
+  }
+
+  .logo-titulo {
+    width: 400px;
+  }
+
+  .left-content p {
+    width: 400px;
+    font-size: 2rem;
+    transform: translateY(-80%);
+  }
+
+  .buttons {
+    width: 400px;
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 18px 36px;
+    font-size: 1.5rem;
+  }
+
+  .img-fic img {
+    width: 48%;
+  }
+
+  .h2-sci {
+    width: 31%;
+    transform: translateY(-58%);
+  }
+
+  .sci-content {
+    transform: translateY(-18%);
+  }
+
+  .soc {
+    width: 800px;
+    height: 300px;
+  }
+
+  .animated {
+    min-height: 130vh;
+  }
+}
+
+/* 1600px */
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 70%;
+  }
+
+  .box .item {
+    width: 22vw;
+    height: 33vw;
+    left: 40%;
+  }
+
+  .soc {
+    padding: 0;
+  }
+
+  .animated {
+    min-height: 130vh;
+  }
+
+  .ficcao {
+    min-height: 95vh;
+  }
+
+  .img-fic img {
+    width: 50%;
+  }
+
+  .h2-sci {
+    width: 32%;
+    transform: translateY(-65%);
+  }
+
+  .sci-content {
+    width: 30%;
+    height: auto;
+    transform: translateY(-18%);
+  }
+
+  .about-content {
+    width: 40;
+    height: auto;
+  }
+
+  .fra {
+    width: 50%;
+  }
+
+  .aplication {
+    min-height: 60vh;
+  }
+
+  .img-ap {
+    bottom: -17.5%;
+    right: -7.5%;
+    width: 65%;
+  }
+
+  .app {
+    height: 450px;
+  }
+
+  .left-content {
+    width: 50%;
+  }
+
+  .logo-titulo {
+    width: 500px;
+  }
+
+  .left-content p {
+    width: 500px;
+    font-size: 2rem;
+    transform: translateY(-90%);
+  }
+
+  .buttons {
+    width: 500px;
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 18px 36px;
+    font-size: 1.6rem;
+  }
+
+  .news h3,
+  #first,
+  .timeline-date {
+    font-size: 2.5rem;
+  }
+
+  .timeline-content h3 {
+    line-height: 3rem;
+  }
+
+  .about-project h3 {
+    font-size: 2rem;
+  }
+
+  .news p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+
+  #tex p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+
+  .footer a,
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .copyright {
+    font-size: 4rem;
+  }
+}
+
+/* 1700px */
+
+@media (min-width: 1700px) {
+  html {
+    font-size: 72%;
+  }
+
+  .soc {
+    max-width: 1000px;
+    height: 400px;
+  }
+
+  .fra {
+    width: 80%;
+  }
+
+  .animated {
+    min-height: 130vh;
+  }
+
+  .img-fic img {
+    width: 48%;
+  }
+
+  .h2-sci {
+    width: 31%;
+    transform: translateY(-65%);
+  }
+
+  .sci-content {
+    width: 30%;
+    height: auto;
+    transform: translateY(-18%);
+  }
+
+  .about-content {
+    width: 40%;
+    height: auto;
+  }
+
+  .aplication {
+    min-height: 60vh;
+  }
+
+  .img-ap {
+    bottom: -17.5%;
+    right: -8%;
+    width: 65%;
+  }
+
+  .content-ap {
+    height: 700px;
+  }
+
+  .app {
+    height: 500px;
+  }
+
+  .left-content {
+    width: 50%;
+  }
+
+  .logo-titulo {
+    width: 550px;
+  }
+
+  .left-content p {
+    width: 550px;
+    font-size: 2rem;
+    transform: translateY(-100%);
+  }
+
+  .buttons {
+    width: 550px;
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 18px 36px;
+    font-size: 1.6rem;
+  }
+
+  .box .item {
+    width: 24vw;
+    height: 36vw;
+    max-width: 600px;
+    max-height: 900px;
+    top: 50%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+  }
 
   .timeline-items {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
+    max-width: 1400px;
   }
 
-  .timeline-items::before {
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 100%;
-    background-color: var(--main-color);
-    left: calc(50% - 1px);
+  .footer .social a {
+    width: 62px;
+    height: 62px;
+    line-height: 62px;
+    font-size: 35px;
+  }
+}
+
+/* 1800px */
+
+@media (min-width: 1790px) and (max-width: 2000px) {
+  html {
+    font-size: 72%;
   }
 
-  .timeline-item {
-    margin-bottom: 40px;
-    width: 100%;
-    position: relative;
+  .box .item {
+    width: 25vw;
+    height: 37.5vw;
+    max-width: 650px;
+    max-height: 975px;
   }
 
-  .timeline-item:last-child {
-    margin-bottom: 0;
+  .img-fic img {
+    width: 55%;
   }
 
-  .timeline-item:nth-child(odd) {
-    padding-right: calc(50% + 30px);
-    text-align: right;
+  .h2-sci {
+    width: 33%;
+    transform: translateY(-65%);
   }
 
-  .timeline-item:nth-child(even) {
-    padding-left: calc(50% + 30px);
+  .aplication {
+    min-height: 70vh;
   }
 
-  .timeline-dot {
-    height: 21px;
-    width: 21px;
-    background-color: var(--main-color);
-    box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
-    position: absolute;
-    left: calc(50% - 8px);
-    border-radius: 50%;
-    top: 10px;
+  .img-ap {
+    bottom: -15.5%;
+    right: -7.5%;
+    width: 62%;
+  }
+
+  .content-ap {
+    height: 700px;
+  }
+
+  .timeline-items {
+    max-width: 1500px;
+  }
+
+  .fra {
+    width: 50%;
+  }
+
+  .app {
+    height: 550px;
+  }
+
+  .left-content {
+    width: 50%;
+  }
+
+  .logo-titulo {
+    width: 600px;
+  }
+
+  .left-content p {
+    width: 600px;
+    font-size: 2.5rem;
+    transform: translateY(-100%);
+  }
+
+  .buttons {
+    width: 600px;
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 20px 40px;
+    font-size: 1.8rem;
+  }
+
+  .news p {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .news h3,
+  .timeline-date {
+    font-size: 2.5rem;
+    line-height: 1.4;
+  }
+}
+
+/* 2000px */
+
+@media (min-width: 2000px) {
+  html {
+    font-size: 80%;
+  }
+
+  .header {
+    height: 8rem;
+  }
+
+  .first-sec {
+    min-height: 100vh;
+  }
+
+  .animated {
+    min-height: 120vh;
+  }
+
+  .h2-sci {
+    width: 29%;
+    transform: translateY(-70%);
+  }
+
+  .sci-content {
+    width: 30%;
+    height: auto;
+    transform: translateY(-10%);
+  }
+
+  .about-content {
+    width: 40%;
+    height: auto;
+  }
+
+  .aplication {
+    min-height: 80vh;
+  }
+
+  .fra {
+    width: 60%;
+  }
+
+  .img-ap {
+    bottom: -15.5%;
+    right: -7.5%;
+    width: 62%;
+  }
+
+  .content-ap {
+    height: 800px;
+  }
+
+  .app {
+    height: 600px;
+  }
+
+  .left-content {
+    width: 50%;
+  }
+
+  .logo-titulo {
+    width: 650px;
+  }
+
+  .left-content p {
+    width: 650px;
+    font-size: 2.5rem;
+    transform: translateY(-100%);
+  }
+
+  .buttons {
+    width: 650px;
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 22px 44px;
+    font-size: 2rem;
+  }
+
+  .timeline-items {
+    max-width: 1500px;
+  }
+
+  .news p {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .news h3,
+  .timeline-date {
+    font-size: 2.5rem;
+    line-height: 1.4;
   }
 }
