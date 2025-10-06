@@ -28,7 +28,7 @@ menuIcon.onclick = () => {
 let prev = document.querySelector(".prev");
 let next = document.querySelector(".next");
 let box = document.querySelector(".box");
-let boxx = document.querySelector(".boxx"); // A seção com o fundo
+// let boxx = document.querySelector(".boxx"); // A seção com o fundo
 
 function updateBackground() {
   let items = document.querySelectorAll(".item");
@@ -62,11 +62,11 @@ updateBackground();
 
 //Linkando as páginas
 
-document.querySelectorAll(".timeline-content").forEach((element) => {
-  element.addEventListener("click", () => {
-    window.open("index2.html", "_blank");
-  });
-});
+// document.querySelectorAll(".timeline-content").forEach((element) => {
+//   element.addEventListener("click", () => {
+//     window.open("index2.html", "_blank");
+//   });
+// });
 
 //Script imagens
 
@@ -112,7 +112,7 @@ function updateBackground() {
   let items = document.querySelectorAll(".item");
   let centerItem = items[3];
   let bg = centerItem.getAttribute("data-bg");
-  document.querySelector(".boxx").style.backgroundImage = bg;
+  // document.querySelector(".boxx").style.backgroundImage = bg;
 }
 
 // Inicia o autoplay

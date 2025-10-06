@@ -2,6 +2,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Lustria&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +18,8 @@
 }
 
 :root {
-  --bg-color: #0a1612;
+  /* --bg-color: #0a1612; */
+  --bg-color: #222222;
   --second-bg-color: #79acc0;
   --text-color: #fff;
   --main-color: rgb(166, 0, 255);
@@ -99,6 +104,51 @@ span {
 
 /* Primeira section */
 
+/*  */
+
+.first-sec {
+  width: 90%;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+/* 
+  .text-first {
+    width: 50%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
+  }
+
+  .text-first h1 {
+    font-family: "Lustria";
+    font-size: 12rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #f1eeeb;
+  }
+
+  .text-first h2 {
+    font-family: "Lustria";
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #f1eeeb;
+  } */
+
+.first-sec img {
+  margin-top: 5rem;
+  width: 80%;
+}
+
+/* */
+
 .first-sec {
   min-height: 80vh;
 }
@@ -116,6 +166,8 @@ span {
 /* h2 title */
 
 .titleh2 {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
   height: 100px;
   display: flex;
   align-items: center;
@@ -262,7 +314,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 150vh;
+  min-height: 180vh;
 }
 
 #one {
@@ -385,6 +437,7 @@ span {
 }
 
 .timeline-items {
+  color: #fff;
   max-width: 1200px;
   margin: auto;
   display: flex;
@@ -433,6 +486,27 @@ span {
   top: 10px;
 }
 
+.titleh2 h2 {
+  font-family: "Lustria";
+}
+
+#first h3,
+#second h3,
+#third h3,
+#fourtyd h3,
+#fiftyd h3,
+#sixtyd h3,
+#seven h3 {
+  font-family: "Duru Sans";
+  text-decoration: none;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+.timeline-date p {
+  font-family: "Sofia Sans";
+}
+
 .timeline-date {
   font-size: 20px;
   font-weight: 800;
@@ -441,6 +515,7 @@ span {
 }
 
 .timeline-content {
+  background-color: red;
   text-align: left;
 }
 
@@ -479,7 +554,7 @@ i #second {
 /* Quarta obra */
 
 #fourtyd {
-  color: #fffdee;
+  color: #b9c2e1;
 }
 
 /* Quinta obra */
@@ -524,8 +599,9 @@ i #second {
 
 .timeline-content h3 {
   font-size: 20px;
-  color: var(--main-color);
+  color: #fff;
   margin: 0 0 10px;
+  text-decoration: none;
   font-weight: 500;
 }
 
@@ -536,6 +612,47 @@ i #second {
   font-weight: 300;
   line-height: 22px;
   padding-top: 1rem;
+}
+
+/* Teste */
+
+.timeline-content {
+  position: relative; /* garante que o título use este bloco como referência */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-content img {
+  width: 100%;
+  border-radius: 20%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* título sobreposto */
+.timeline-overlay-title {
+  position: absolute; /* fica sobre a imagem */
+  top: 50%; /* 50% da altura */
+  left: 50%; /* 50% da largura */
+  transform: translate(-50%, -50%); /* centralização exata */
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  text-align: center;
+  width: 100%; /* garante quebra de linha central */
+  pointer-events: none;
+}
+
+/* efeito hover */
+.timeline-content:hover img {
+  opacity: 0;
+}
+
+.timeline-content:hover .timeline-overlay-title {
+  opacity: 1;
 }
 
 /* Fic-Paradoxo-slider */
@@ -578,28 +695,18 @@ i #second {
 
 /* Section - Ficcão */
 
-.ficcao {
-  width: 100%;
-  min-height: 100vh;
-  background-image: url(/Paradoxo-do-Saber/src/ficcao2.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: relative;
-}
-
 .img-fic {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  margin: 0 auto;
+  padding-top: 2rem;
 }
 
 .img-fic img {
-  width: 45%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 2;
-  transform: translateY(-0%);
+  width: 50%;
+  border-radius: 5%;
 }
 
 /* Section - Sci */
@@ -607,7 +714,7 @@ i #second {
 .sci {
   width: 100%;
   min-height: 70vh;
-  background-image: url(/Paradoxo-do-Saber/src/fundo2.png);
+  /* background-image: url(/Paradoxo-do-Saber/src/fundo2.png); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -773,12 +880,12 @@ i #second {
 /* About */
 
 .about {
-  min-height: 80vh;
+  min-height: 40vh;
   padding-top: 5rem;
 }
 
 .about-content {
-  max-width: 800px;
+  max-width: 500px;
   height: 500px;
   display: flex;
   margin: 0 auto;
@@ -792,16 +899,15 @@ i #second {
 }
 
 .about-content:hover {
-  transform: scale(1.05);
   box-shadow: 0 0 25px var(--main-color);
 }
 
 .about-content p {
   text-align: center;
   font-size: 2rem;
-  padding-inline: 3rem;
+  padding: 2rem;
+  padding-inline: 5rem;
   letter-spacing: 1px;
-  font-style: italic;
 }
 
 /* Footer */
@@ -988,6 +1094,11 @@ i #second {
     font-size: 3rem;
     display: block;
   }
+
+  #menu-icon:hover {
+    cursor: pointer;
+  }
+
   .navbar {
     position: absolute;
     top: 100%;
@@ -1004,11 +1115,15 @@ i #second {
   /* sections */
 
   .first-sec {
-    min-height: 40vh;
+    min-height: 50vh;
   }
 
-  .first-sec video {
-    margin-top: 5rem;
+  .first-sec img {
+    width: 100%;
+  }
+
+  .first-sec img {
+    padding-top: 5rem;
   }
 
   .titleh2 {
@@ -1033,7 +1148,7 @@ i #second {
   /* div .box */
 
   .boxx {
-    height: 70vw;
+    height: 80vw;
     background-size: 10%;
   }
 
@@ -1041,6 +1156,7 @@ i #second {
     width: 40vw;
     height: 50vw;
     left: 32.5%;
+    border-radius: 5%;
   }
 
   .box .item img {
@@ -1076,26 +1192,6 @@ i #second {
 
   .slider img {
     width: 130px;
-  }
-
-  /* Ficcao */
-
-  .ficcao {
-    width: 100%;
-    min-height: 80vh;
-    background-image: url(/Paradoxo-do-Saber/src/ficcao2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
-  }
-
-  .img-fic {
-    justify-content: center;
-  }
-
-  .img-fic img {
-    width: calc(100% - 1vw);
   }
 
   /* h2 - sci */
@@ -1137,12 +1233,6 @@ i #second {
 
   /* About */
 
-  .about {
-    min-height: 70vh;
-    padding-top: 1.5rem;
-    padding-bottom: 2rem;
-  }
-
   .about-content {
     max-width: 85%;
     height: auto;
@@ -1169,10 +1259,6 @@ i #second {
 /* 460px até 767px */
 
 @media (min-width: 461px) and (max-width: 600px) {
-  .img-fic img {
-    width: calc(85% - 10vw);
-  }
-
   .sci-content {
     width: 70%;
     height: auto;
@@ -1187,10 +1273,6 @@ i #second {
 /* 601px */
 
 @media (min-width: 601px) and (max-width: 767px) {
-  .img-fic img {
-    width: calc(85% - 20vw);
-  }
-
   .sci-content {
     width: 60%;
     height: auto;
@@ -1232,14 +1314,6 @@ i #second {
     height: 10%;
     justify-content: center;
     align-items: center;
-  }
-
-  .ficcao {
-    height: 90vh;
-  }
-
-  .img-fic img {
-    width: calc(85% - 30vw);
   }
 
   .sci-content {
@@ -1323,14 +1397,6 @@ i #second {
     padding: 5rem;
   }
 
-  .ficcao {
-    height: 90vh;
-  }
-
-  .img-fic img {
-    width: calc(85% - 30vw);
-  }
-
   .h2-sci {
     align-items: flex-end;
     padding-right: 5rem;
@@ -1376,14 +1442,6 @@ i #second {
     width: 30vw;
     height: 40vw;
     left: 40%;
-  }
-
-  .ficcao {
-    min-height: 75vh;
-  }
-
-  .img-fic img {
-    width: 50%;
   }
 
   .h2-sci {
@@ -1460,14 +1518,6 @@ i #second {
     font-size: 2rem;
   }
 
-  .ficcao {
-    min-height: 80vh;
-  }
-
-  .img-fic img {
-    width: 50%;
-  }
-
   .h2-sci {
     width: 34%;
     transform: translateY(-58%);
@@ -1527,12 +1577,20 @@ i #second {
   }
 
   .boxx {
-    height: 85vh;
+    height: 75vh;
+  }
+
+  .img-fic img {
+    width: 60%;
   }
 
   .box .item {
-    width: 30%;
-    height: 65%;
+    width: 20%;
+    height: 55%;
+  }
+
+  .timeline-items {
+    max-width: 75%;
   }
 
   .soc {
@@ -1542,19 +1600,11 @@ i #second {
   }
 
   .first-sec {
-    min-height: 100vh;
+    min-height: 70vh;
   }
 
   .animated {
     min-height: 120vh;
-  }
-
-  .ficcao {
-    min-height: 85vh;
-  }
-
-  .img-fic img {
-    width: 48%;
   }
 
   .h2-sci {
@@ -1562,8 +1612,21 @@ i #second {
     transform: translateY(-58%);
   }
 
+  .sci {
+    min-height: 20vh;
+  }
+
   .sci-content {
+    width: 45%;
     height: auto;
+  }
+
+  .sci-content p {
+    padding: 2rem;
+  }
+
+  .about {
+    min-height: 30vh;
   }
 
   .about-content {
@@ -1624,11 +1687,60 @@ i #second {
     font-size: 65%;
   }
   .first-sec {
+    width: 90%;
     background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+  }
+  /* 
+  .text-first {
+    width: 50%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
   }
 
-  .ficcao {
-    min-height: 90vh;
+  .text-first h1 {
+    font-family: "Lustria";
+    font-size: 12rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #f1eeeb;
+  }
+
+  .text-first h2 {
+    font-family: "Lustria";
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #f1eeeb;
+  } */
+
+  .first-sec img {
+    margin-top: 5rem;
+    width: 80%;
+  }
+
+  .first-sec video {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .timeline-items {
+    max-width: 70%;
+  }
+
+  .titleh2 {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
   }
 
   .img-ap {
@@ -1649,6 +1761,23 @@ i #second {
     width: 400px;
   }
 
+  #obras {
+    background-color: #222222;
+  }
+
+  .box {
+    max-width: 65%;
+  }
+
+  .boxx {
+    min-height: 90vh;
+  }
+
+  .box .item {
+    width: 30%;
+    height: 60%;
+  }
+
   .left-content p {
     width: 400px;
     font-size: 2rem;
@@ -1665,17 +1794,21 @@ i #second {
     font-size: 1.5rem;
   }
 
-  .img-fic img {
-    width: 48%;
-  }
-
   .h2-sci {
     width: 31%;
     transform: translateY(-58%);
   }
 
   .sci-content {
-    transform: translateY(-18%);
+    width: 35%;
+  }
+
+  .about {
+    padding-bottom: 2rem;
+  }
+
+  .about p {
+    padding: 2rem;
   }
 
   .soc {
@@ -1695,9 +1828,13 @@ i #second {
     font-size: 70%;
   }
 
+  .first-sec img {
+    width: 100%;
+  }
+
   .box .item {
-    width: 22vw;
-    height: 33vw;
+    width: 18vw;
+    height: 28vw;
     left: 40%;
   }
 
@@ -1709,21 +1846,13 @@ i #second {
     min-height: 130vh;
   }
 
-  .ficcao {
-    min-height: 95vh;
-  }
-
-  .img-fic img {
-    width: 50%;
-  }
-
   .h2-sci {
     width: 32%;
     transform: translateY(-65%);
   }
 
   .sci-content {
-    width: 30%;
+    width: 35%;
     height: auto;
     transform: translateY(-18%);
   }
@@ -1776,8 +1905,11 @@ i #second {
   }
 
   .news h3,
-  #first,
-  .timeline-date {
+  #first {
+    font-size: 2.5rem;
+  }
+
+  .timeline-date p {
     font-size: 2.5rem;
   }
 
@@ -1786,13 +1918,13 @@ i #second {
   }
 
   .about-project h3 {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 
-  .news p {
+  /* .news p {
     font-size: 1.8rem;
     line-height: 2.5rem;
-  }
+  } */
 
   #tex p {
     font-size: 1.8rem;
@@ -1827,10 +1959,6 @@ i #second {
 
   .animated {
     min-height: 130vh;
-  }
-
-  .img-fic img {
-    width: 48%;
   }
 
   .h2-sci {
@@ -1925,10 +2053,6 @@ i #second {
     height: 37.5vw;
     max-width: 650px;
     max-height: 975px;
-  }
-
-  .img-fic img {
-    width: 55%;
   }
 
   .h2-sci {

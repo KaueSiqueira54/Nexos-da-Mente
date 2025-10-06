@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paradoxo</title>
+  <title>Nexos da Mente</title>
 
   <!-- Link CSS -->
   <link rel="stylesheet" href="/Paradoxo-do-Saber/style/style.css">
@@ -15,18 +15,18 @@
   />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="src/Paradoxo do Saber.png" type="image/x-icon">
+    <link rel="shortcut icon" href="src/Vetor (s-fundo).png" type="image/x-icon">
 </head>
 <body>
   <!-- Header -->
   <header class="header">
-    <a href="#home" class="name"><span><i>Paradoxo</i></span> do Saber</a>
+    <a id="titulo" href="#home" class="name"><span id="titulo"><i>Nexos</i></span> da Mente</a>
 
     <i class="bx bx-menu" id="menu-icon"></i>
 
     <nav class="navbar">
       <a href="#home" class="link">Home</a>
-      <a href="#obras" class="link">Obras-Literárias</a>
+      <a href="#obras" class="link">Obras Literárias</a>
       <a href="#projeto" class="link">Novidades</a>
       <a href="#scifi" class="link">Sci-Fi</a>
       <a href="#sobre" class="link">Sobre</a>
@@ -38,7 +38,12 @@
   </header>
   <!-- First Section -->
   <section class="first-sec" id="home">
-    <video autoplay loop muted playsinline src="src/paradoxo.mp4"></video>
+    <!-- <video autoplay loop muted playsinline src="src/paradoxo.mp4"></video> -->
+     <img src="src/nexus.png" alt="">
+     <!-- <div class="text-first">
+      <h1>Nexos</h1>
+      <h2>Da Mente</h2>
+     </div> -->
   </section>
   <div class="titleh2" id="obras">
     <h2>Obras Literárias</h2>
@@ -67,9 +72,6 @@
       <div class="item" data-bg="url('/Paradoxo-do-Saber/src/shope.png')">
         <img src="/Paradoxo-do-Saber/src/shope.png" alt="" />
       </div>
-      <div class="item" data-bg="url('/Paradoxo-do-Saber/src/alita.png')">
-        <img src="/Paradoxo-do-Saber/src/alita.png" alt="" />
-      </div>
     </div>
 
     <div class="buttons" style="display: none;">
@@ -78,11 +80,11 @@
     </div>
   </section>
 
-  <div class="titleh2" id="obras" style="display: none;">
+  <!-- <div class="titleh2" id="obras" style="display: none;">
     <h2>Animação das Obras</h2>
-  </div>
+  </div> -->
   <!-- Section animações -->
-  <section class="animated" style="display: none;">
+  <!-- <section class="animated" style="display: none;">
     <div class="container">
       <span style="--i: 1">
         <img src="src/love.png" alt="" id="one">
@@ -109,13 +111,13 @@
         <img src="src/admi.jpg" alt="" id="one">
       </span>
     </div>
-  </section>
+  </section> -->
 
-  <div class="soc">
+  <!-- <div class="soc">
     <div class="fra">
       <img src="src/trailer.png" alt="">
     </div>
-  </div>
+  </div> -->
 
   <div class="titleh2" id="projeto">
     <h2>Novidades</h2>
@@ -127,90 +129,104 @@
       <!-- Primeiro item -->
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <div class="timeline-date" id="first">Duna</div>
-        <div class="timeline-content" id="tex">
+        <!-- <div class="timeline-date" id="first"><p>Duna</p></div> -->
+        <div class="timeline-content" >
+            <div class="timeline-date" id="first"><p>Duna</p></div>
           <img src="src/duna.png" alt="">
-            <h3 id="first">Duna 3, previsto para estrear até o início de 2027. Veja o que esperar do filme final.</h3>
+            <h2 class="timeline-overlay-title">Duna 3, previsto para estrear até o início de 2027. Veja o que esperar do filme final.</h2>
+            <!-- <h3>Duna 3, previsto para estrear até o início de 2027. Veja o que esperar do filme final.</h3> -->
         </div>
       </div>
 
       <!-- Segundo item -->
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <div class="timeline-date" id="second">Farenheit</div>
+        <!-- <div class="timeline-date" id="second"><p>Farenheit</p></div> -->
         <div class="timeline-content">
+            <div class="timeline-date" id="second"><p>Farenheit</p></div>
           <img src="src/faren.jpg" alt="">
-            <h3 id="second">"A maioria das pessoas corre para evitar pensar."</h3>
-            <p>
+            <h2 class="timeline-overlay-title">"A maioria das pessoas corre para evitar pensar."</h2>
+            <!-- <h3>"A maioria das pessoas corre para evitar pensar."</h3> -->
+            <!-- <p>
               E você, está correndo ou resistindo? <br>
               Venha descobrir como o fogo da ignorância ainda arde em tempos modernos.
-            </p>
+            </p> -->
         </div>
       </div>
 
       <!-- Terceiro item -->
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <div class="timeline-date" id="third">Admirável Mundo Novo</div>
+        <!-- <div class="timeline-date" id="third"><p>Admirável Mundo Novo</p></div> -->
         <div class="timeline-content">
+            <div class="timeline-date" id="third"><p>Admirável Mundo Novo</p></div>
           <img src="src/adm.jpg" alt="">
-            <h3 id="third">"Acabamos por amar aquilo que nos escraviza."</h3>
-            <p>
+            <h2 class="timeline-overlay-title">"Acabamos por amar aquilo que nos escraviza."</h2>
+            <!-- <h3>"Acabamos por amar aquilo que nos escraviza."</h3> -->
+            <!-- <p>
               Quando a dominação se disfarça de prazer, a liberdade perde o valor. <br>
               Descubra como Huxley antecipou os mecanismos de controle por meio do prazer em nossa análise crítica.
-            </p>
+            </p> -->
         </div>
       </div>
 
       <!-- Quarto item -->
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <div class="timeline-date" id="fourtyd">Confira nossas recomendações</div>
+        <!-- <div class="timeline-date" id="fourtyd"><p>Confira nossas recomendações</p></div> -->
         <div class="timeline-content">
+            <div class="timeline-date" id="fourtyd"><p>Confira nossas recomendações</p></div>
           <img src="src/moon.png" alt="">
-            <h3 id="fourtyd">Confira as melhores recomendações de filmes Sci-fi para maratonar!</h3>
+            <h2 class="timeline-overlay-title">Confira as melhores recomendações de filmes Sci-fi para maratonar!</h2>
+            <!-- <h3>Confira as melhores recomendações de filmes Sci-fi para maratonar!</h3> -->
         </div>
       </div>
 
       <!-- Quinto item -->
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <div class="timeline-date" id="fiftyd">Frankenstein</div>
+        <!-- <div class="timeline-date" id="fiftyd"><p>Frankenstein</p></div> -->
         <div class="timeline-content">
+          <div class="timeline-date" id="fiftyd"><p>Frankenstein</p></div>
           <img src="src/franken.png" alt="">
-            <h3 id="fiftyd">"Aprender o segredo da vida era o único objetivo do meu trabalho."</h3>
-            <p>
+          <h2 class="timeline-overlay-title">"Aprender o segredo da vida era o único objetivo do meu trabalho."</h2>
+            <!-- <h3>"Aprender o segredo da vida era o único objetivo do meu trabalho."</h3> -->
+            <!-- <p>
               Mas até onde podemos ir sem destruir o que nos torna humanos? <br>
               Descubra as implicações éticas e filosóficas por trás da criação de Frankenstein em nossa análise completa.
-            </p>
+            </p> -->
         </div>
       </div>
 
       <!-- Sexto item -->
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <div class="timeline-date" id="sixtyd">A Arte de Escrever</div>
+        <!-- <div class="timeline-date" id="sixtyd"><p>A Arte de Escrever</p></div> -->
         <div class="timeline-content">
+          <div class="timeline-date" id="sixtyd"><p>A Arte de Escrever</p></div>
           <img src="src/shopew.jpg" alt="">
-            <h3 id="sixtyd">"Escrever com clareza é pensar com clareza."</h3>
-            <p>
+          <h2 class="timeline-overlay-title">"Escrever com clareza é pensar com clareza."</h2>
+            <!-- <h3>"Escrever com clareza é pensar com clareza."</h3> -->
+            <!-- <p>
               Será que pensamos claramente — ou apenas repetimos ideias dos outros? <br>
               Descubra por que Schopenhauer considerava a escrita um espelho da mente, em nossa análise afiada da obra.
-            </p>
+            </p> -->
         </div>
       </div>
 
       <!-- Sétimo item -->
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <div class="timeline-date" id="seven">Assim Falou Zaratustra</div>
+        <!-- <div class="timeline-date" id="seven"><p>Assim Falou Zaratustra</p></div> -->
         <div class="timeline-content">
+          <div class="timeline-date" id="seven"><p>Assim Falou Zaratustra</p></div>
           <img src="src/falou.jpg" alt="">
-            <h3 id="seven">"Torna-te quem tu és!"</h3>
-            <p>
+          <h2 class="timeline-overlay-title">"Torna-te quem tu és!"</h2>
+            <!-- <h3>"Torna-te quem tu és!"</h3> -->
+            <!-- <p>
               Você está pronto para abandonar o conforto e confrontar sua verdadeira essência? <br>
               Explore conosco as provocações filosóficas de Nietzsche em nossa análise de Zaratustra.
-            </p>
+            </p> -->
         </div>
       </div>
 
@@ -220,7 +236,7 @@
     <h2>Ficção Científica</h2>
   </div>
   <!-- Sci-Fi -->
-  <div class="fic">
+  <!-- <div class="fic">
     <div class="slider-track">
       <div class="slider">
         <img src="src/parado.png" alt="">
@@ -229,39 +245,36 @@
         <img src="src/parado.png" alt="">
         <img src="src/parado.png" alt="">
         <img src="src/parado.png" alt="">
-        <img src="src/parado.png" alt="">
-        <img src="src/parado.png" alt="">
+        <img src="src/parado.png" alt=""> -->
         <!-- Grupo 1 -->
+        <!-- <img src="src/parado.png" alt="">
         <img src="src/parado.png" alt="">
         <img src="src/parado.png" alt="">
         <img src="src/parado.png" alt="">
         <img src="src/parado.png" alt="">
         <img src="src/parado.png" alt="">
         <img src="src/parado.png" alt="">
-        <img src="src/parado.png" alt="">
-        <img src="src/parado.png" alt="">
+        <img src="src/parado.png" alt=""> -->
         <!-- Grupo 2 -->
-      </div>
+      <!-- </div>
     </div>
-  </div>
+  </div> -->
   <!-- Section Ficção Científica -->
   <section class="ficcao">
     <div class="img-fic">
-      <img src="src/fic3.png" alt="">
+      <img src="src/fundo2-sci.png" alt="">
     </div>
   </section>
 
   <section class="sci">
-    <div class="content-sci-title">
+    <div class="content-sci-title" >
       <div class="h2-sci">
-        <h2>Sci-Fi</h2>
-        <p>Você sabe o que é?</p>
       </div>
     </div>
 
     <div class="sci-content">
       <p>
-        A ficção científica é o laboratório da imaginação. É onde escritores, cineastas e artistas testam ideias que ainda não existem, mas que um dia podem se tornar realidade. Em suas páginas ou telas, vemos humanos cruzando galáxias, robôs desenvolvendo sentimentos e sociedades transformadas pela tecnologia. Mais do que prever o futuro, a ficção científica nos faz olhar para o presente com outros olhos, questionando nossas escolhas e o rumo que damos ao conhecimento.
+        A ficção científica é o laboratório da imaginação. É onde escritores, cineastas e artistas testam ideias que ainda não existem, mas que um dia podem se tornar realidade. Em suas páginas ou telas, vemos humanos cruzando galáxias, robôs desenvolvendo sentimentos e sociedades transformadas pela tecnologia.
       </p>
     </div>
   </section>
@@ -300,10 +313,7 @@
   <!-- Section about -->
   <section class="about">
     <div class="about-content">
-      <p>Somos uma equipe formada por duas pessoas, movidas por um interesse comum na ficção e filosofia.<br>Os conteúdos desenvolvidos tem o objetivo de compartilhar conhecimento, estimular a leitura e a reflexão, e aproximar mais pessoas desses universos fascinantes.
-      <br>Acreditamos que tanto a ficção quanto a filosofia são ferramentas poderosas para expandir horizontes, questionar o mundo ao nosso redor e imaginar novos futuros.<br>Por isso, nosso trabalho aqui é voltado a quem se interessa por esses temas, oferecendo conteúdo acessível, instigante e, acima de tudo, inspirador.<br>
-      Queremos incentivar a leitura, o pensamento crítico e a curiosidade porque, no fundo, acreditamos que boas ideias começam com boas perguntas.<br>
-      Sejam bem-vindos!</p>
+      <p>Somos uma equipe formada por três pessoas, movidas por um interesse comum na ficção e filosofia. Os conteúdos desenvolvidos tem o objetivo de compartilhar conhecimento, estimular a leitura e a reflexão, e aproximar mais pessoas desses universos fascinantes.
     </div>
   </section>
   <!-- Footer -->
