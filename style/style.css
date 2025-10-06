@@ -1186,6 +1186,10 @@ i #second {
 
   /* Fic */
 
+  .img-fic img {
+    width: 80%;
+  }
+
   .fic {
     height: 70px;
   }
@@ -1222,6 +1226,10 @@ i #second {
 
   /* Sci-content */
 
+  .sci {
+    min-height: 30vh;
+  }
+
   .sci-content {
     width: 85%;
     height: auto;
@@ -1229,6 +1237,7 @@ i #second {
 
   .sci-content p {
     font-size: 2rem;
+    padding: 2rem;
   }
 
   /* About */
@@ -1239,7 +1248,7 @@ i #second {
   }
 
   .about-content p {
-    padding: 1rem;
+    padding: 2rem;
   }
 
   /* footer */
@@ -1259,23 +1268,38 @@ i #second {
 /* 460px até 767px */
 
 @media (min-width: 461px) and (max-width: 600px) {
+  .sci {
+    min-height: 30vh;
+  }
+
   .sci-content {
     width: 70%;
     height: auto;
   }
 
+  .about {
+    min-height: 30vh;
+  }
+
   .about-content {
     max-width: 70%;
-    height: auto;
   }
 }
 
 /* 601px */
 
 @media (min-width: 601px) and (max-width: 767px) {
+  .sci {
+    min-height: 30vh;
+  }
+
   .sci-content {
     width: 60%;
     height: auto;
+  }
+
+  .about {
+    min-height: 30vh;
   }
 
   .about-content {
@@ -1316,9 +1340,17 @@ i #second {
     align-items: center;
   }
 
+  .sci {
+    min-height: 40vh;
+  }
+
   .sci-content {
     width: 50%;
     height: auto;
+  }
+
+  .about {
+    min-height: 30vh;
   }
 
   .about-content {
@@ -1403,12 +1435,12 @@ i #second {
   }
 
   .sci-content {
-    width: 50%;
+    width: 40%;
     height: auto;
   }
 
   .about-content {
-    max-width: 50%;
+    max-width: 40%;
     height: auto;
   }
 
@@ -1577,7 +1609,7 @@ i #second {
   }
 
   .boxx {
-    height: 75vh;
+    height: 65vh;
   }
 
   .img-fic img {
@@ -1586,7 +1618,7 @@ i #second {
 
   .box .item {
     width: 20%;
-    height: 55%;
+    height: 45%;
   }
 
   .timeline-items {
@@ -1617,7 +1649,6 @@ i #second {
   }
 
   .sci-content {
-    width: 45%;
     height: auto;
   }
 
@@ -1695,33 +1726,6 @@ i #second {
     margin: 0 auto;
     padding-bottom: 5rem;
   }
-  /* 
-  .text-first {
-    width: 50%;
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    margin: 0 auto;
-  }
-
-  .text-first h1 {
-    font-family: "Lustria";
-    font-size: 12rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: #f1eeeb;
-  }
-
-  .text-first h2 {
-    font-family: "Lustria";
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: #f1eeeb;
-  } */
 
   .first-sec img {
     margin-top: 5rem;
@@ -1736,6 +1740,10 @@ i #second {
 
   .timeline-items {
     max-width: 70%;
+  }
+
+  .img-fic {
+    width: 80%;
   }
 
   .titleh2 {
@@ -1775,7 +1783,7 @@ i #second {
 
   .box .item {
     width: 30%;
-    height: 60%;
+    height: 50%;
   }
 
   .left-content p {
@@ -1973,7 +1981,7 @@ i #second {
   }
 
   .about-content {
-    width: 40%;
+    width: 30%;
     height: auto;
   }
 
@@ -2019,20 +2027,6 @@ i #second {
     font-size: 1.6rem;
   }
 
-  .box .item {
-    width: 24vw;
-    height: 36vw;
-    max-width: 600px;
-    max-height: 900px;
-    top: 50%;
-    left: 38%;
-    transform: translate(-50%, -50%);
-  }
-
-  .timeline-items {
-    max-width: 1400px;
-  }
-
   .footer .social a {
     width: 62px;
     height: 62px;
@@ -2046,13 +2040,6 @@ i #second {
 @media (min-width: 1790px) and (max-width: 2000px) {
   html {
     font-size: 72%;
-  }
-
-  .box .item {
-    width: 25vw;
-    height: 37.5vw;
-    max-width: 650px;
-    max-height: 975px;
   }
 
   .h2-sci {
@@ -2072,10 +2059,6 @@ i #second {
 
   .content-ap {
     height: 700px;
-  }
-
-  .timeline-items {
-    max-width: 1500px;
   }
 
   .fra {
@@ -2153,7 +2136,7 @@ i #second {
   }
 
   .about-content {
-    width: 40%;
+    width: 30%;
     height: auto;
   }
 
@@ -2201,10 +2184,6 @@ i #second {
   .btn {
     padding: 22px 44px;
     font-size: 2rem;
-  }
-
-  .timeline-items {
-    max-width: 1500px;
   }
 
   .news p {
