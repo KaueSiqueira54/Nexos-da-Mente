@@ -1,11 +1,11 @@
-# 📚 Paradoxo do Saber
+# 📚 Nexos da Mente
 
 [![GitHub repo size](https://img.shields.io/github/repo-size/KaueSiqueira54/Nexos-da-Mente?style=flat-square)]()
 [![GitHub stars](https://img.shields.io/github/stars/KaueSiqueira54/Nexos-da-Mente?style=flat-square)]()
 [![GitHub forks](https://img.shields.io/github/forks/KaueSiqueira54/Nexos-da-Mente?style=flat-square)]()
 [![GitHub license](https://img.shields.io/github/license/KaueSiqueira54/Nexos-da-Mente?style=flat-square)]()
 
-Projeto que apresenta, de forma visual, um portfólio para o **Paradoxo do Saber** — uma iniciativa que fará análises filosóficas de obras de ficção científica.
+Projeto que apresenta, de forma visual, um portfólio para o **Nexos da Mente** — uma iniciativa que fará análises filosóficas de obras de ficção científica.
 
 ---
 
