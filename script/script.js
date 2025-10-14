@@ -62,11 +62,11 @@ updateBackground();
 
 //Linkando as páginas
 
-// document.querySelectorAll(".timeline-content").forEach((element) => {
-//   element.addEventListener("click", () => {
-//     window.open("index2.html", "_blank");
-//   });
-// });
+document.querySelectorAll(".timeline-content").forEach((element) => {
+  element.addEventListener("click", () => {
+    window.open("index2.html", "_blank");
+  });
+});
 
 //Script imagens
 
