@@ -1603,7 +1603,7 @@ i #second {
 
 /* 1200px */
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1400px) {
   html {
     font-size: 60%;
   }
@@ -1831,13 +1831,17 @@ i #second {
 
 /* 1600px */
 
-@media (min-width: 1600px) {
+@media (min-width: 1601px) {
   html {
     font-size: 70%;
   }
 
   .first-sec img {
     width: 100%;
+  }
+
+  .boxx {
+    min-height: 90vh;
   }
 
   .box .item {
@@ -1978,6 +1982,10 @@ i #second {
     width: 30%;
     height: auto;
     transform: translateY(-18%);
+  }
+
+  .boxx {
+    min-height: 90vh;
   }
 
   .about-content {
@@ -2168,6 +2176,10 @@ i #second {
 
   .logo-titulo {
     width: 650px;
+  }
+
+  .boxx {
+    min-height: 90vh;
   }
 
   .left-content p {
