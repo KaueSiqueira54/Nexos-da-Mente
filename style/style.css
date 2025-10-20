@@ -1743,7 +1743,7 @@ i #second {
   }
 
   .img-fic {
-    width: 80%;
+    width: 60%;
   }
 
   .titleh2 {
@@ -1783,7 +1783,7 @@ i #second {
 
   .box .item {
     width: 30%;
-    height: 50%;
+    height: 40%;
   }
 
   .left-content p {
@@ -1842,6 +1842,10 @@ i #second {
 
   .boxx {
     min-height: 90vh;
+  }
+
+  .img-fic img {
+    width: 60%;
   }
 
   .box .item {
@@ -2059,6 +2063,10 @@ i #second {
     min-height: 70vh;
   }
 
+  .img-fic img {
+    width: 50%;
+  }
+
   .img-ap {
     bottom: -15.5%;
     right: -7.5%;
@@ -2130,6 +2138,10 @@ i #second {
 
   .animated {
     min-height: 120vh;
+  }
+
+  .img-fic img {
+    width: 50%;
   }
 
   .h2-sci {
