@@ -19,10 +19,10 @@
 
 :root {
   /* --bg-color: #0a1612; */
-  --bg-color: #222222;
-  --second-bg-color: #79acc0;
-  --text-color: #fff;
-  --main-color: rgb(166, 0, 255);
+  --bg-color: #192338;
+  --second-bg-color: #192338;
+  --text-color: #d9e1f1;
+  --main-color: #8fb3e2;
   --secondary-bg-color: #bce3ea;
 }
 
@@ -75,15 +75,15 @@ body {
 }
 
 .name span {
-  text-shadow: 0 0 25px rgb(166, 0, 255);
+  text-shadow: 0 0 25px var(--main-color);
 }
 
 .name span {
-  color: rgb(166, 0, 255);
+  color: var(--main-color);
 }
 
 span {
-  color: rgb(166, 0, 255);
+  color: var(--main-color);
 }
 
 .navbar a {
@@ -188,7 +188,7 @@ span {
   justify-content: center;
   align-items: center;
   height: 90vh;
-  background: #222;
+  background: var(--bg-color);
   overflow: hidden;
   position: relative;
   background-position: center;
@@ -1936,10 +1936,6 @@ i #second {
 
   .logo-titulo {
     width: 400px;
-  }
-
-  #obras {
-    background-color: #222222;
   }
 
   .box {
