@@ -1320,7 +1320,7 @@ i #second {
   }
 
   .img-fic img {
-    width: 70%;
+    width: 60%;
   }
 
   .boxx {
@@ -1424,7 +1424,7 @@ i #second {
   }
 
   .img-fic img {
-    width: 65%;
+    width: 55%;
   }
 
   .box .item {
@@ -1582,7 +1582,7 @@ i #second {
   }
 
   .img-fic img {
-    width: 60%;
+    width: 50%;
   }
 
   
@@ -1650,7 +1650,7 @@ i #second {
 
   .box .item {
     width: 20%;
-    height: 45%;
+    height: 65%;
   }
 
   .soc {
@@ -1718,7 +1718,7 @@ i #second {
 
   
   .img-fic img {
-    width: 60%;
+    width: 50%;
   }
 
   
@@ -1782,12 +1782,12 @@ i #second {
   }
 
   .img-fic img {
-    width: 60%;
+    width: 45%;
   }
 
   .box .item {
     width: 20%;
-    height: 45%;
+    height: 65%;
   }
 
   .timeline-items {
@@ -1911,8 +1911,8 @@ i #second {
     max-width: 70%;
   }
 
-  .img-fic {
-    width: 70%;
+  .img-fic img{
+    width: 45%;
   }
 
   .titleh2 {
@@ -2010,7 +2010,7 @@ i #second {
   }
 
   .img-fic img {
-    width: 55%;
+    width: 40%;
   }
 
   .box .item {
@@ -2024,7 +2024,7 @@ i #second {
   }
 
   .timeline-items {
-    max-width: 80%;
+    max-width: 70%;
   }
 
   .animated {
@@ -2139,7 +2139,7 @@ i #second {
   }
 
   .img-fic img {
-    width: 50%;
+    width: 40%;
   }
 
   .fra {
@@ -2241,7 +2241,7 @@ i #second {
   }
 
   .img-fic img {
-    width: 50%;
+    width: 40%;
   }
 
   .img-ap {
@@ -2296,6 +2296,10 @@ i #second {
     font-size: 2.5rem;
     line-height: 1.4;
   }
+
+  .about {
+    padding-bottom: 4rem;
+  }
 }
 
 /* 2000px */
@@ -2318,7 +2322,7 @@ i #second {
   }
 
   .img-fic img {
-    width: 50%;
+    width: 40%;
   }
 
   .h2-sci {
@@ -2396,5 +2400,13 @@ i #second {
   .timeline-date {
     font-size: 2.5rem;
     line-height: 1.4;
+  }
+
+  .timeline-items {
+    max-width: 70%;
+  }
+
+  .about {
+    padding-bottom: 4rem;
   }
 }

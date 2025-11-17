@@ -76,7 +76,7 @@ document.querySelectorAll(".item").forEach((item, index) => {
     const currentItems = Array.from(document.querySelectorAll(".item"));
     const clickedIndex = currentItems.indexOf(item);
 
-    // Se o item já estiver no centro (posição 3), apenas ignore
+    // Se o item já estiver no centro, apenas ignore
     if (clickedIndex === 3) return;
 
     // Calcular quantas vezes devemos rotacionar
